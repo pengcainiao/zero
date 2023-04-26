@@ -3,8 +3,8 @@ package executors
 import (
 	"time"
 
-	"github.com/pengcainiao/core/syncx"
-	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/zero/core/syncx"
+	"github.com/pengcainiao/zero/core/timex"
 )
 
 // A LessExecutor is an executor to limit execution once within given time interval.

@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/logx"
 )
 
 const authorizationFree = "/flyele/configs/user/authentication-free"

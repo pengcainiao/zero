@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pengcainiao/core/codec"
-	"github.com/pengcainiao/core/iox"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/zero/core/codec"
+	"github.com/pengcainiao/zero/core/iox"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/rest/httpx"
 )
 
 const (

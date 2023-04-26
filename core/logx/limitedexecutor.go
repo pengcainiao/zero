@@ -4,8 +4,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pengcainiao/core/syncx"
-	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/zero/core/syncx"
+	"github.com/pengcainiao/zero/core/timex"
 )
 
 type limitedExecutor struct {

@@ -3,7 +3,7 @@ package cors
 import (
 	"net/http"
 
-	"github.com/pengcainiao/rest/internal/response"
+	"github.com/pengcainiao/zero/rest/internal/response"
 )
 
 const (

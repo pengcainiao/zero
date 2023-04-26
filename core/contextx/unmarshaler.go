@@ -3,7 +3,7 @@ package contextx
 import (
 	"context"
 
-	"github.com/pengcainiao/core/mapping"
+	"github.com/pengcainiao/zero/core/mapping"
 )
 
 const contextTagKey = "ctx"

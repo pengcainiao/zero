@@ -3,7 +3,7 @@ package serverinterceptors
 import (
 	"context"
 
-	ztrace "github.com/pengcainiao/core/trace"
+	ztrace "github.com/pengcainiao/zero/core/trace"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/baggage"
 	"go.opentelemetry.io/otel/codes"

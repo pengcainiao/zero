@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pengcainiao/rest/httprouter"
+	"github.com/pengcainiao/zero/rest/httprouter"
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/963204765/httpclient/httplib"

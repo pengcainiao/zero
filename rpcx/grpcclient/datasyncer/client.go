@@ -5,7 +5,7 @@ package datasyncer
 
 import (
 	"context"
-	"github.com/pengcainiao/rpcx/grpcbase"
+	"github.com/pengcainiao/zero/rpcx/grpcbase"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 	"log"

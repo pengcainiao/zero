@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/logx"
 
-	"github.com/pengcainiao/core/conf"
+	"github.com/pengcainiao/zero/core/conf"
 
 	"go.etcd.io/etcd/api/v3/mvccpb"
 	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"

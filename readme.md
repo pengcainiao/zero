@@ -4,10 +4,10 @@
 
 English | [简体中文](readme-cn.md)
 
-[![Go](https://github.com/pengcainiao/workflows/Go/badge.svg?branch=master)](https://github.com/pengcainiao/actions)
+[![Go](https://github.com/pengcainiao/zero/workflows/Go/badge.svg?branch=master)](https://github.com/pengcainiao/zero/actions)
 [![codecov](https://codecov.io/gh/zeromicro/go-zero/branch/master/graph/badge.svg)](https://codecov.io/gh/zeromicro/go-zero)
-[![Go Report Card](https://goreportcard.com/badge/github.com/pengcainiao)](https://goreportcard.com/report/github.com/pengcainiao)
-[![Release](https://img.shields.io/github/v/release/zeromicro/go-zero.svg?style=flat-square)](https://github.com/pengcainiao)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pengcainiao/zero)](https://goreportcard.com/report/github.com/pengcainiao/zero)
+[![Release](https://img.shields.io/github/v/release/zeromicro/go-zero.svg?style=flat-square)](https://github.com/pengcainiao/zero)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Note: To meet the requirements of Open Source Foundation, we moved go-zero from tal-tech to zeromicro (a neutral GitHub organization).**
@@ -90,7 +90,7 @@ As below, go-zero protects the system with a couple of layers and mechanisms:
 Run the following command under your project:
 
 ```shell
-go get -u github.com/pengcainiao
+go get -u github.com/pengcainiao/zero
 ```
 
 ## 6. Quick Start
@@ -107,10 +107,10 @@ go get -u github.com/pengcainiao
 
    ```shell
    # for Go 1.15 and earlier
-   GO111MODULE=on go get -u github.com/pengcainiao/tools/goctl@latest
+   GO111MODULE=on go get -u github.com/pengcainiao/zero/tools/goctl@latest
    
    # for Go 1.16 and later
-   go install github.com/pengcainiao/tools/goctl@latest
+   go install github.com/pengcainiao/zero/tools/goctl@latest
    ```
 
    make sure goctl is executable.

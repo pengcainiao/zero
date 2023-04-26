@@ -12,18 +12,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pengcainiao/core/queue/nsqueue"
-	"github.com/pengcainiao/core/sysx"
-	"github.com/pengcainiao/tools/syncer"
+	"github.com/pengcainiao/zero/core/queue/nsqueue"
+	"github.com/pengcainiao/zero/core/sysx"
+	"github.com/pengcainiao/zero/tools/syncer"
 
-	"github.com/pengcainiao/rest/httprouter"
+	"github.com/pengcainiao/zero/rest/httprouter"
 
 	"github.com/gin-gonic/gin"
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/logx"
 
-	"github.com/pengcainiao/core/conf"
-	"github.com/pengcainiao/rest/httpx"
-	"github.com/pengcainiao/rest/router"
+	"github.com/pengcainiao/zero/core/conf"
+	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/router"
 	"github.com/stretchr/testify/assert"
 )
 

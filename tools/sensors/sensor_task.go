@@ -3,7 +3,7 @@ package sensors
 import (
 	"context"
 
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/logx"
 )
 
 type EventType string

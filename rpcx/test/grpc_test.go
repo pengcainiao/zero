@@ -6,14 +6,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pengcainiao/rpcx/grpcclient/operationsystem"
+	"github.com/pengcainiao/zero/rpcx/grpcclient/operationsystem"
 
-	"github.com/pengcainiao/rpcx/grpcbase"
-	"github.com/pengcainiao/rpcx/grpcclient/clouddisk"
-	"github.com/pengcainiao/rpcx/grpcclient/notice"
-	"github.com/pengcainiao/rpcx/grpcclient/record"
-	"github.com/pengcainiao/rpcx/grpcclient/task"
-	"github.com/pengcainiao/rpcx/grpcclient/usercenter"
+	"github.com/pengcainiao/zero/rpcx/grpcbase"
+	"github.com/pengcainiao/zero/rpcx/grpcclient/clouddisk"
+	"github.com/pengcainiao/zero/rpcx/grpcclient/notice"
+	"github.com/pengcainiao/zero/rpcx/grpcclient/record"
+	"github.com/pengcainiao/zero/rpcx/grpcclient/task"
+	"github.com/pengcainiao/zero/rpcx/grpcclient/usercenter"
 )
 
 type RpcServer struct {

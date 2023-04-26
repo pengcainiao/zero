@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/pengcainiao/core/errorx"
-	"github.com/pengcainiao/core/hash"
-	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/zero/core/errorx"
+	"github.com/pengcainiao/zero/core/hash"
+	"github.com/pengcainiao/zero/core/syncx"
 )
 
 type (

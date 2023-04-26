@@ -1,7 +1,7 @@
 package events
 
 import (
-	"github.com/pengcainiao/tools/sensors"
+	"github.com/pengcainiao/zero/tools/sensors"
 )
 
 type UserProfile struct {

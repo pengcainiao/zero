@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/syncx"
-	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/syncx"
+	"github.com/pengcainiao/zero/core/timex"
 )
 
 const defaultSlowThreshold = time.Millisecond * 1000

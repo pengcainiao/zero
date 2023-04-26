@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	sonyflake "github.com/pengcainiao/core/snowflake"
-	"github.com/pengcainiao/rest/httprouter"
+	sonyflake "github.com/pengcainiao/zero/core/snowflake"
+	"github.com/pengcainiao/zero/rest/httprouter"
 	"github.com/youzan/go-nsq"
 )
 

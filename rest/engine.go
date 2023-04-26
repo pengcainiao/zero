@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/justinas/alice"
-	"github.com/pengcainiao/core/codec"
-	"github.com/pengcainiao/core/load"
-	"github.com/pengcainiao/core/stat"
-	"github.com/pengcainiao/rest/handler"
-	"github.com/pengcainiao/rest/httpx"
-	"github.com/pengcainiao/rest/internal"
-	"github.com/pengcainiao/rest/internal/response"
+	"github.com/pengcainiao/zero/core/codec"
+	"github.com/pengcainiao/zero/core/load"
+	"github.com/pengcainiao/zero/core/stat"
+	"github.com/pengcainiao/zero/rest/handler"
+	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/internal"
+	"github.com/pengcainiao/zero/rest/internal/response"
 )
 
 // use 1000m to represent 100%

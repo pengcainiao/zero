@@ -538,8 +538,8 @@ github.com/yuin/gopher-lua v0.0.0-20200816102855-ee81675732da h1:NimzV1aGyq29m5u
 github.com/yuin/gopher-lua v0.0.0-20200816102855-ee81675732da/go.mod h1:E1AXubJBdNmFERAOucpDIxNzeGfLzg0mYh+UfMWdChA=
 gitlab.flyele.vip/server-side/elasticv7 v1.0.3 h1:f5F3XsnuqTiVZMyDwqeRoPQa8nYjSBGJQM2WphFj2WE=
 gitlab.flyele.vip/server-side/elasticv7 v1.0.3/go.mod h1:2H46U9gPrtvX+sAKEx859G7ite8NZwY+GciTjFRnn3s=
-github.com/pengcainiao v2.0.246 h1:a22VGhgZmtKSH78xvo27zn10xu6kgbYGTHo6ZtciviY=
-github.com/pengcainiao v2.0.246/go.mod h1:BTxb+QhYvhcHAeMd7CgAwcVtIieOQ0EwFjFrMTDKMhc=
+github.com/pengcainiao/zero v2.0.246 h1:a22VGhgZmtKSH78xvo27zn10xu6kgbYGTHo6ZtciviY=
+github.com/pengcainiao/zero v2.0.246/go.mod h1:BTxb+QhYvhcHAeMd7CgAwcVtIieOQ0EwFjFrMTDKMhc=
 gitlab.flyele.vip/server-side/sqlx v1.4.32 h1:Me/WY7TOFFNRJNNpUdFBmkPlAWV58pAiIT0XRjyxxTw=
 gitlab.flyele.vip/server-side/sqlx v1.4.32/go.mod h1:FNJmjfLMFNO2cHXddBWIQS9YlqM/i/37BOXMgWRguLY=
 go.etcd.io/etcd/api/v3 v3.5.0/go.mod h1:cbVKeC6lCfl7j/8jBhAK6aIYO9XOjdptoxU/nLQcPvs=

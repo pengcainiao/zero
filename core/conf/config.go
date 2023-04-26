@@ -2,7 +2,7 @@ package conf
 
 import (
 	"fmt"
-	"github.com/pengcainiao/core/mapping"
+	"github.com/pengcainiao/zero/core/mapping"
 	"io/ioutil"
 	"log"
 	"os"

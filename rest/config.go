@@ -3,7 +3,7 @@ package rest
 import (
 	"time"
 
-	"github.com/pengcainiao/core/service"
+	"github.com/pengcainiao/zero/core/service"
 )
 
 type (

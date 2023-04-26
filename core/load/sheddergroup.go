@@ -3,7 +3,7 @@ package load
 import (
 	"io"
 
-	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/zero/core/syncx"
 )
 
 // A ShedderGroup is a manager to manage key based shedders.

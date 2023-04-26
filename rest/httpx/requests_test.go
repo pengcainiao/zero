@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pengcainiao/rest/pathvar"
+	"github.com/pengcainiao/zero/rest/pathvar"
 	"github.com/stretchr/testify/assert"
 )
 

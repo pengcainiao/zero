@@ -1,8 +1,8 @@
 package conf
 
 import (
-	"github.com/pengcainiao/core/fs"
-	"github.com/pengcainiao/core/hash"
+	"github.com/pengcainiao/zero/core/fs"
+	"github.com/pengcainiao/zero/core/hash"
 	"io/ioutil"
 	"os"
 	"testing"

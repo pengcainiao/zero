@@ -6,9 +6,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/pengcainiao/core/search"
-	"github.com/pengcainiao/rest/httpx"
-	"github.com/pengcainiao/rest/pathvar"
+	"github.com/pengcainiao/zero/core/search"
+	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/pathvar"
 )
 
 const (

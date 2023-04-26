@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"strings"
 
-	"github.com/pengcainiao/core/env"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/zero/core/env"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/timex"
 	"gitlab.flyele.vip/server-side/sqlx"
 )
 

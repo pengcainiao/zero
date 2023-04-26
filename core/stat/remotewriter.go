@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/logx"
 )
 
 const httpTimeout = time.Second * 5

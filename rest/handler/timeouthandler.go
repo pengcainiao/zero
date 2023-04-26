@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pengcainiao/rest/httpx"
-	"github.com/pengcainiao/rest/internal"
+	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/internal"
 )
 
 const (

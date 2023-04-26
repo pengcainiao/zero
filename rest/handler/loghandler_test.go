@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pengcainiao/rest/internal"
+	"github.com/pengcainiao/zero/rest/internal"
 	"github.com/stretchr/testify/assert"
 )
 

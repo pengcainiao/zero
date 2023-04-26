@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/logx"
 )
 
 const (

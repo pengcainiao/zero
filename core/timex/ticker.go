@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/zero/core/lang"
 )
 
 // errTimeout indicates a timeout.

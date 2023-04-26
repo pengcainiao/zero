@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pengcainiao/core/fs"
+	"github.com/pengcainiao/zero/core/fs"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/963204765/httpclient/httplib"
-	"github.com/pengcainiao/core/mapping"
-	"github.com/pengcainiao/rest/httprouter"
-	"github.com/pengcainiao/rest/pathvar"
+	"github.com/pengcainiao/zero/core/mapping"
+	"github.com/pengcainiao/zero/rest/httprouter"
+	"github.com/pengcainiao/zero/rest/pathvar"
 )
 
 const (

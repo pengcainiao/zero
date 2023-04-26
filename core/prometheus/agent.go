@@ -7,9 +7,9 @@ import (
 
 	_ "net/http/pprof"
 
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/syncx"
-	"github.com/pengcainiao/core/threading"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/syncx"
+	"github.com/pengcainiao/zero/core/threading"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 

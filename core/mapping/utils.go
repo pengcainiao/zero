@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pengcainiao/core/stringx"
+	"github.com/pengcainiao/zero/core/stringx"
 )
 
 const (

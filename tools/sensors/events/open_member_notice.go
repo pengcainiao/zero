@@ -1,6 +1,6 @@
 package events
 
-import "github.com/pengcainiao/tools/sensors"
+import "github.com/pengcainiao/zero/tools/sensors"
 
 type OpenMemberNotice struct {
 	sensors.BaseEvent

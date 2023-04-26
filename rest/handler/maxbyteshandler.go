@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/pengcainiao/rest/internal"
+	"github.com/pengcainiao/zero/rest/internal"
 )
 
 // MaxBytesHandler returns a middleware that limit reading of http request body.

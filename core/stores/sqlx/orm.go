@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/pengcainiao/core/mapping"
+	"github.com/pengcainiao/zero/core/mapping"
 )
 
 const tagName = "db"

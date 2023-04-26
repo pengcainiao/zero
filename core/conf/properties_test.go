@@ -1,7 +1,7 @@
 package conf
 
 import (
-	"github.com/pengcainiao/core/fs"
+	"github.com/pengcainiao/zero/core/fs"
 	"os"
 	"testing"
 

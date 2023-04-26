@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pengcainiao/core/iox"
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/iox"
+	"github.com/pengcainiao/zero/core/logx"
 )
 
 const (

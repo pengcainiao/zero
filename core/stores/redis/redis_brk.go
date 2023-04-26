@@ -6,7 +6,7 @@ import (
 
 	red "github.com/go-redis/redis/v8"
 
-	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/zero/core/env"
 )
 
 func Client() RedisNode {

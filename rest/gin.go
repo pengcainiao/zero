@@ -3,13 +3,13 @@ package rest
 import (
 	"os"
 
-	"github.com/pengcainiao/core/conf"
-	"github.com/pengcainiao/core/sysx"
+	"github.com/pengcainiao/zero/core/conf"
+	"github.com/pengcainiao/zero/core/sysx"
 
 	"github.com/gin-gonic/gin"
-	"github.com/pengcainiao/core/env"
-	"github.com/pengcainiao/core/service"
-	"github.com/pengcainiao/rest/handler"
+	"github.com/pengcainiao/zero/core/env"
+	"github.com/pengcainiao/zero/core/service"
+	"github.com/pengcainiao/zero/rest/handler"
 )
 
 //NewGinServer 新建gin服务器

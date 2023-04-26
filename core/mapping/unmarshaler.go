@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pengcainiao/core/jsonx"
-	"github.com/pengcainiao/core/lang"
-	"github.com/pengcainiao/core/stringx"
+	"github.com/pengcainiao/zero/core/jsonx"
+	"github.com/pengcainiao/zero/core/lang"
+	"github.com/pengcainiao/zero/core/stringx"
 )
 
 const (

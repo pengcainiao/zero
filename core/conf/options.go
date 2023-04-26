@@ -1,7 +1,7 @@
 package conf
 
 import (
-	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/zero/core/env"
 	"time"
 )
 

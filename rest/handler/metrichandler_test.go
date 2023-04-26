@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/zero/core/stat"
 	"github.com/stretchr/testify/assert"
 )
 

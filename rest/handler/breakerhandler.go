@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/pengcainiao/core/breaker"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/stat"
-	"github.com/pengcainiao/rest/httpx"
-	"github.com/pengcainiao/rest/internal/response"
+	"github.com/pengcainiao/zero/core/breaker"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/stat"
+	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/internal/response"
 )
 
 const breakerSeparator = "://"

@@ -6,11 +6,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/rescue"
-	"github.com/pengcainiao/core/stat"
-	"github.com/pengcainiao/core/threading"
-	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/rescue"
+	"github.com/pengcainiao/zero/core/stat"
+	"github.com/pengcainiao/zero/core/threading"
+	"github.com/pengcainiao/zero/core/timex"
 )
 
 const queueName = "queue"

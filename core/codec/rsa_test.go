@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"github.com/pengcainiao/core/fs"
+	"github.com/pengcainiao/zero/core/fs"
 	"github.com/stretchr/testify/assert"
 )
 

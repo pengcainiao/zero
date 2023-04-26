@@ -8,9 +8,9 @@ import (
 
 	"gitlab.flyele.vip/server-side/sqlx"
 
-	"github.com/pengcainiao/core/executors"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/stringx"
+	"github.com/pengcainiao/zero/core/executors"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/stringx"
 )
 
 const (

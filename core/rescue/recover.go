@@ -1,6 +1,6 @@
 package rescue
 
-import "github.com/pengcainiao/core/logx"
+import "github.com/pengcainiao/zero/core/logx"
 
 // Recover is used with defer to do cleanup on panics.
 // Use it like:

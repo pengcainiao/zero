@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pengcainiao/core/stringx"
+	"github.com/pengcainiao/zero/core/stringx"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,8 +1,8 @@
 package collection
 
 import (
-	"github.com/pengcainiao/core/lang"
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/lang"
+	"github.com/pengcainiao/zero/core/logx"
 )
 
 const (

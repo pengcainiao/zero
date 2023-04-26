@@ -1,8 +1,8 @@
 package breaker
 
 import (
-	"github.com/pengcainiao/core/collection"
-	"github.com/pengcainiao/core/mathx"
+	"github.com/pengcainiao/zero/core/collection"
+	"github.com/pengcainiao/zero/core/mathx"
 	"math"
 	"time"
 )

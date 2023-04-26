@@ -1,7 +1,7 @@
 package sensors
 
 import (
-	"github.com/pengcainiao/core/mapping"
+	"github.com/pengcainiao/zero/core/mapping"
 )
 
 type Event interface {

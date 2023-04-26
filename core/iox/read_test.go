@@ -2,8 +2,8 @@ package iox
 
 import (
 	"bytes"
-	"github.com/pengcainiao/core/fs"
-	"github.com/pengcainiao/core/stringx"
+	"github.com/pengcainiao/zero/core/fs"
+	"github.com/pengcainiao/zero/core/stringx"
 	"io"
 	"io/ioutil"
 	"os"

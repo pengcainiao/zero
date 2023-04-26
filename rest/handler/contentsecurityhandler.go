@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/pengcainiao/core/codec"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/rest/httpx"
-	"github.com/pengcainiao/rest/internal/security"
+	"github.com/pengcainiao/zero/core/codec"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/internal/security"
 )
 
 const contentSecurity = "X-Content-Security"

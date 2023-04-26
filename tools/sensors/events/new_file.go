@@ -1,6 +1,6 @@
 package events
 
-import "github.com/pengcainiao/tools/sensors"
+import "github.com/pengcainiao/zero/tools/sensors"
 
 //BusinessType 事项类型
 type BusinessType string

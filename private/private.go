@@ -7,9 +7,9 @@ package private
 //	"strings"
 //
 //	"github.com/963204765/httpclient/httplib"
-//	"github.com/pengcainiao/core/env"
-//	"github.com/pengcainiao/core/logx"
-//	"github.com/pengcainiao/private/ssh"
+//	"github.com/pengcainiao/zero/core/env"
+//	"github.com/pengcainiao/zero/core/logx"
+//	"github.com/pengcainiao/zero/private/ssh"
 //)
 //
 //// PrivateDeploy 私有化部署

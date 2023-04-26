@@ -3,7 +3,7 @@ package trace
 import (
 	"testing"
 
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/logx"
 	"github.com/stretchr/testify/assert"
 )
 

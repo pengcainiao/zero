@@ -3,7 +3,7 @@ package stringx
 import (
 	"errors"
 
-	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/zero/core/lang"
 )
 
 var (

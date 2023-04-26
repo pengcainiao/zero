@@ -18,9 +18,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pengcainiao/core/iox"
-	"github.com/pengcainiao/core/sysx"
-	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/zero/core/iox"
+	"github.com/pengcainiao/zero/core/sysx"
+	"github.com/pengcainiao/zero/core/timex"
 )
 
 const (

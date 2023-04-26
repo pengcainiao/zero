@@ -5,9 +5,9 @@ import (
 	"net/url"
 	"sync"
 
-	"github.com/pengcainiao/core/env"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/sysx"
+	"github.com/pengcainiao/zero/core/env"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/sysx"
 	sdk "github.com/sensorsdata/sa-sdk-go"
 	"github.com/sensorsdata/sa-sdk-go/consumers"
 )

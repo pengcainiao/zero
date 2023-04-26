@@ -3,8 +3,8 @@ package syncx
 import (
 	"time"
 
-	"github.com/pengcainiao/core/lang"
-	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/zero/core/lang"
+	"github.com/pengcainiao/zero/core/timex"
 )
 
 // A Cond is used to wait for conditions.

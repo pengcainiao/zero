@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/rest/httpx"
 )
 
 // LogContext is a context key.

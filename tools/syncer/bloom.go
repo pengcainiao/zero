@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/pengcainiao/core/bloom"
-	"github.com/pengcainiao/rest/httprouter"
+	"github.com/pengcainiao/zero/core/bloom"
+	"github.com/pengcainiao/zero/rest/httprouter"
 )
 
 var (

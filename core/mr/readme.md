@@ -55,7 +55,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/pengcainiao/core/mr"
+    "github.com/pengcainiao/zero/core/mr"
 )
 
 func main() {

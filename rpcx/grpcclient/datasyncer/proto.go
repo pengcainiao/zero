@@ -5,7 +5,7 @@ package datasyncer
 
 import (
 	"context"
-	"github.com/pengcainiao/rpcx/grpcbase"
+	"github.com/pengcainiao/zero/rpcx/grpcbase"
 
 	jsoniter "github.com/json-iterator/go"
 )

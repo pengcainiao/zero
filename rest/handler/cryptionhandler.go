@@ -10,8 +10,8 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/pengcainiao/core/codec"
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/codec"
+	"github.com/pengcainiao/zero/core/logx"
 )
 
 const maxBytes = 1 << 20 // 1 MiB

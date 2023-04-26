@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/pengcainiao/core/discov/internal"
+	"github.com/pengcainiao/zero/core/discov/internal"
 )
 
 const (

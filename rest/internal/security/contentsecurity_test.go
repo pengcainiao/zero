@@ -15,9 +15,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pengcainiao/core/codec"
-	"github.com/pengcainiao/core/fs"
-	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/zero/core/codec"
+	"github.com/pengcainiao/zero/core/fs"
+	"github.com/pengcainiao/zero/rest/httpx"
 	"github.com/stretchr/testify/assert"
 )
 

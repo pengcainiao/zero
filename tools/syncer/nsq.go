@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pengcainiao/core/env"
-	"github.com/pengcainiao/core/queue/nsqueue"
+	"github.com/pengcainiao/zero/core/env"
+	"github.com/pengcainiao/zero/core/queue/nsqueue"
 )
 
 var (

@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/alicebob/miniredis/v2"
-	"github.com/pengcainiao/core/stores/redis"
-	"github.com/pengcainiao/core/stores/redis/redistest"
+	"github.com/pengcainiao/zero/core/stores/redis"
+	"github.com/pengcainiao/zero/core/stores/redis/redistest"
 	"github.com/stretchr/testify/assert"
 )
 

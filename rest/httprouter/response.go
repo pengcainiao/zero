@@ -7,8 +7,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	jsoniter "github.com/json-iterator/go"
-	"github.com/pengcainiao/core/env"
-	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/zero/core/env"
+	"github.com/pengcainiao/zero/core/logx"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/trace"

@@ -4,9 +4,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/pengcainiao/core/discov/internal"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/zero/core/discov/internal"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/syncx"
 )
 
 type (

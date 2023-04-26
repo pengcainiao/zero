@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/syncx"
-	"github.com/pengcainiao/rest/internal"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/syncx"
+	"github.com/pengcainiao/zero/rest/internal"
 )
 
 // MaxConns returns a middleware that limit the concurrent connections.

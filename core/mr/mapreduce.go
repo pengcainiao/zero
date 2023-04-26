@@ -3,8 +3,8 @@ package mr
 import (
 	"context"
 	"errors"
-	"github.com/pengcainiao/core/errorx"
-	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/zero/core/errorx"
+	"github.com/pengcainiao/zero/core/lang"
 	"sync"
 	"sync/atomic"
 )

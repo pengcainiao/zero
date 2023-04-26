@@ -3,9 +3,9 @@ package service
 import (
 	"log"
 
-	"github.com/pengcainiao/core/proc"
-	"github.com/pengcainiao/core/syncx"
-	"github.com/pengcainiao/core/threading"
+	"github.com/pengcainiao/zero/core/proc"
+	"github.com/pengcainiao/zero/core/syncx"
+	"github.com/pengcainiao/zero/core/threading"
 )
 
 type (

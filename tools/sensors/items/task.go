@@ -1,6 +1,6 @@
 package items
 
-import "github.com/pengcainiao/tools/sensors"
+import "github.com/pengcainiao/zero/tools/sensors"
 
 const (
 	HierarchyTypeParent = "父级"

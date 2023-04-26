@@ -2,8 +2,8 @@ package hash
 
 import (
 	"fmt"
-	"github.com/pengcainiao/core/lang"
-	"github.com/pengcainiao/core/mapping"
+	"github.com/pengcainiao/zero/core/lang"
+	"github.com/pengcainiao/zero/core/mapping"
 	"sort"
 	"strconv"
 	"sync"

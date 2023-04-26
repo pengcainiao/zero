@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/zero/core/lang"
 	"github.com/stretchr/testify/assert"
 )
 

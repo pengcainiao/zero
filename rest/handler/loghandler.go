@@ -14,13 +14,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pengcainiao/core/iox"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/core/syncx"
-	"github.com/pengcainiao/core/timex"
-	"github.com/pengcainiao/core/utils"
-	"github.com/pengcainiao/rest/httpx"
-	"github.com/pengcainiao/rest/internal"
+	"github.com/pengcainiao/zero/core/iox"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/core/syncx"
+	"github.com/pengcainiao/zero/core/timex"
+	"github.com/pengcainiao/zero/core/utils"
+	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/internal"
 )
 
 const (

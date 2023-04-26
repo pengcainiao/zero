@@ -2,11 +2,11 @@ package rest
 
 import (
 	"crypto/tls"
-	"github.com/pengcainiao/core/logx"
-	"github.com/pengcainiao/rest/handler"
-	"github.com/pengcainiao/rest/httpx"
-	"github.com/pengcainiao/rest/internal/cors"
-	"github.com/pengcainiao/rest/router"
+	"github.com/pengcainiao/zero/core/logx"
+	"github.com/pengcainiao/zero/rest/handler"
+	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/internal/cors"
+	"github.com/pengcainiao/zero/rest/router"
 	"log"
 	"net/http"
 	"path"
