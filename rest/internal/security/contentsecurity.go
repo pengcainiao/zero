@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/codec"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/iox"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
+	"github.com/pengcainiao/core/codec"
+	"github.com/pengcainiao/core/iox"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/rest/httpx"
 )
 
 const (

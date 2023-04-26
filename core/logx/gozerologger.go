@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/timex"
 )
 
 type traceLogger struct {

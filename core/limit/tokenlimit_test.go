@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stores/redis"
+	"github.com/pengcainiao/core/stores/redis/redistest"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis/redistest"
 )
 
 func init() {

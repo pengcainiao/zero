@@ -6,9 +6,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mathx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/mathx"
+	"github.com/pengcainiao/core/syncx"
 )
 
 const (

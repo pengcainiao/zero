@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/stat"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/peer"
 )

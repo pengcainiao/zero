@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 )
 
 // DefaultMemProfileRate is the default memory profiling rate.

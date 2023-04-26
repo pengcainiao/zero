@@ -2,11 +2,11 @@ package queue
 
 import (
 	"context"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/queue/nsqueue"
+	"github.com/pengcainiao/rest/httprouter"
+	"github.com/pengcainiao/tools/sensors"
 	"github.com/youzan/go-nsq"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/queue/nsqueue"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
-	"gitlab.flyele.vip/server-side/go-zero/v2/tools/sensors"
 	"sync"
 	"sync/atomic"
 	"testing"
@@ -102,7 +102,7 @@ type sensorsConsumer struct {
 	sensors.SensorTask
 }
 
-func (s sensorsConsumer)New() nsqueue.MqMessageConsumer {
+func (s sensorsConsumer) New() nsqueue.MqMessageConsumer {
 	return &sensorsConsumer{}
 }
 
@@ -110,7 +110,7 @@ func (s sensorsConsumer) HandleMessage(context *httprouter.Context, protocol *ns
 	return nil
 }
 
-func TestFromNsqMessage(t *testing.T)  {
+func TestFromNsqMessage(t *testing.T) {
 	message := &nsq.Message{
 		Body: []byte(`
 {
@@ -143,5 +143,5 @@ func TestFromNsqMessage(t *testing.T)  {
 	s := &sensorsConsumer{}
 
 	nsqueue.FromNsqMessage(message, s)
-	logx.NewTraceLogger(context.Background()).Debug().Interface("消费者",s).Msg("")
+	logx.NewTraceLogger(context.Background()).Debug().Interface("消费者", s).Msg("")
 }

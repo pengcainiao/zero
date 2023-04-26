@@ -1,6 +1,6 @@
 package cache
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
+import "github.com/pengcainiao/core/stores/redis"
 
 type (
 	// A ClusterConf is the config of a redis cluster that used as cache.

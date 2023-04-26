@@ -3,9 +3,9 @@ package service
 import (
 	"log"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/proc"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
+	"github.com/pengcainiao/core/proc"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/threading"
 )
 
 type (

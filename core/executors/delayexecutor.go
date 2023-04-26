@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
+	"github.com/pengcainiao/core/threading"
 )
 
 // A DelayExecutor delays a tasks on given delay interval.

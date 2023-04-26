@@ -14,8 +14,6 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
-	"gopkg.in/cheggaaa/pb.v1"
 )
 
 // If Fuzz stuck, we don't know why, because it only returns hung or unexpected,

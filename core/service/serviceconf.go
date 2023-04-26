@@ -3,14 +3,14 @@ package service
 import (
 	"log"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/conf"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/load"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/prometheus"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/trace"
+	"github.com/pengcainiao/core/conf"
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/core/load"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/prometheus"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/sysx"
+	"github.com/pengcainiao/core/trace"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"sync"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 )
 
 var (

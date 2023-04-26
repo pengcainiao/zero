@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/executors"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
+	"github.com/pengcainiao/core/executors"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/syncx"
 )
 
 var (

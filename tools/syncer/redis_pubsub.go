@@ -5,8 +5,8 @@ import (
 	"errors"
 
 	json "github.com/json-iterator/go"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stores/redis"
 )
 
 const (
@@ -34,7 +34,7 @@ type ExchangeMessage struct {
 	Message          string                 `json:"message,omitempty"`
 	Title            string                 `json:"title,omitempty"`
 	RefID            string                 `json:"ref_id,omitempty"`
-	RefType          string                 `json:"ref_type,omitempty"`   // 消息类型
+	RefType          string                 `json:"ref_type,omitempty"` // 消息类型
 	FileID           string                 `json:"file_id,omitempty"`
 	Changes          map[string]interface{} `json:"changes,omitempty"`    // 变更信息
 	IsRedDot         bool                   `json:"is_red_dot,omitempty"` // 是否红点

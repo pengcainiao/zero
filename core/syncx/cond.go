@@ -3,8 +3,8 @@ package syncx
 import (
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/timex"
 )
 
 // A Cond is used to wait for conditions.

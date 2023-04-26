@@ -1,6 +1,6 @@
 package items
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/tools/sensors"
+import "github.com/pengcainiao/tools/sensors"
 
 type Project struct {
 	ItemID                     string `json:"item_id"`                      //项目ID

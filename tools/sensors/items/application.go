@@ -1,6 +1,6 @@
 package items
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/tools/sensors"
+import "github.com/pengcainiao/tools/sensors"
 
 type Application struct {
 	ItemID                         string `json:"item_id,omitempty"`                          // 应用ID

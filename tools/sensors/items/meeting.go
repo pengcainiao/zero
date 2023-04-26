@@ -1,7 +1,7 @@
 package items
 
 import (
-	"gitlab.flyele.vip/server-side/go-zero/v2/tools/sensors"
+	"github.com/pengcainiao/tools/sensors"
 )
 
 type MeetingState string

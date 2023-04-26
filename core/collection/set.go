@@ -1,8 +1,8 @@
 package collection
 
 import (
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/logx"
 )
 
 const (

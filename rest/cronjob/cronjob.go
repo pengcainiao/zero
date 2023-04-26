@@ -6,12 +6,12 @@ import (
 	"os"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/tools"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/tools"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/rest/httprouter"
+	"github.com/pengcainiao/rest/httpx"
 )
 
 var (

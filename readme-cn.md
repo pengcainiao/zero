@@ -4,11 +4,11 @@
 
 [English](readme.md) | 简体中文
 
-[![Go](https://gitlab.flyele.vip/server-side/go-zero/v2/workflows/Go/badge.svg?branch=master)](https://gitlab.flyele.vip/server-side/go-zero/v2/actions)
-[![Go Report Card](https://goreportcard.com/badge/gitlab.flyele.vip/server-side/go-zero/v2)](https://goreportcard.com/report/gitlab.flyele.vip/server-side/go-zero/v2)
+[![Go](https://github.com/pengcainiao/workflows/Go/badge.svg?branch=master)](https://github.com/pengcainiao/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pengcainiao)](https://goreportcard.com/report/github.com/pengcainiao)
 [![goproxy](https://goproxy.cn/stats/github.com/tal-tech/go-zero/badges/download-count.svg)](https://goproxy.cn/stats/github.com/tal-tech/go-zero/badges/download-count.svg)
 [![codecov](https://codecov.io/gh/zeromicro/go-zero/branch/master/graph/badge.svg)](https://codecov.io/gh/zeromicro/go-zero)
-[![Release](https://img.shields.io/github/v/release/zeromicro/go-zero.svg?style=flat-square)](https://gitlab.flyele.vip/server-side/go-zero/v2)
+[![Release](https://img.shields.io/github/v/release/zeromicro/go-zero.svg?style=flat-square)](https://github.com/pengcainiao)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > ***缩短从需求到上线的距离***
@@ -89,7 +89,7 @@ go-zero 是一个集成了各种工程实践的包含 web 和 rpc 框架，有�
 在项目目录下通过如下命令安装：
 
 ```shell
-GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u gitlab.flyele.vip/server-side/go-zero/v2
+GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u github.com/pengcainiao
 ```
 
 ## 5. Quick Start
@@ -106,10 +106,10 @@ GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u gitlab.flyele.vip/se
 
     ```shell
     # Go 1.15 及之前版本
-    GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u gitlab.flyele.vip/server-side/go-zero/v2/tools/goctl@latest
+    GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go get -u github.com/pengcainiao/tools/goctl@latest
     
     # Go 1.16 及以后版本
-    GOPROXY=https://goproxy.cn/,direct go install gitlab.flyele.vip/server-side/go-zero/v2/tools/goctl@latest
+    GOPROXY=https://goproxy.cn/,direct go install github.com/pengcainiao/tools/goctl@latest
     ```
 
     确保 goctl 可执行
@@ -245,7 +245,7 @@ go-zero 已被许多公司用于生产部署，接入场景如在线教育、电
 >57. 店有帮
 >58. 七牛云
 
-如果贵公司也已使用 go-zero，欢迎在 [登记地址](https://gitlab.flyele.vip/server-side/go-zero/v2/issues/602) 登记，仅仅为了推广，不做其它用途。
+如果贵公司也已使用 go-zero，欢迎在 [登记地址](https://github.com/pengcainiao/issues/602) 登记，仅仅为了推广，不做其它用途。
 
 ## 9. CNCF 云原生技术全景图
 

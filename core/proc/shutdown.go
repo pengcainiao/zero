@@ -10,8 +10,8 @@ import (
 	"syscall"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/threading"
 )
 
 const (

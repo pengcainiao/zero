@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
+	"github.com/pengcainiao/core/lang"
 )
 
 // errTimeout indicates a timeout.

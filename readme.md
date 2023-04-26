@@ -4,10 +4,10 @@
 
 English | [简体中文](readme-cn.md)
 
-[![Go](https://gitlab.flyele.vip/server-side/go-zero/v2/workflows/Go/badge.svg?branch=master)](https://gitlab.flyele.vip/server-side/go-zero/v2/actions)
+[![Go](https://github.com/pengcainiao/workflows/Go/badge.svg?branch=master)](https://github.com/pengcainiao/actions)
 [![codecov](https://codecov.io/gh/zeromicro/go-zero/branch/master/graph/badge.svg)](https://codecov.io/gh/zeromicro/go-zero)
-[![Go Report Card](https://goreportcard.com/badge/gitlab.flyele.vip/server-side/go-zero/v2)](https://goreportcard.com/report/gitlab.flyele.vip/server-side/go-zero/v2)
-[![Release](https://img.shields.io/github/v/release/zeromicro/go-zero.svg?style=flat-square)](https://gitlab.flyele.vip/server-side/go-zero/v2)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pengcainiao)](https://goreportcard.com/report/github.com/pengcainiao)
+[![Release](https://img.shields.io/github/v/release/zeromicro/go-zero.svg?style=flat-square)](https://github.com/pengcainiao)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Note: To meet the requirements of Open Source Foundation, we moved go-zero from tal-tech to zeromicro (a neutral GitHub organization).**
@@ -90,7 +90,7 @@ As below, go-zero protects the system with a couple of layers and mechanisms:
 Run the following command under your project:
 
 ```shell
-go get -u gitlab.flyele.vip/server-side/go-zero/v2
+go get -u github.com/pengcainiao
 ```
 
 ## 6. Quick Start
@@ -107,10 +107,10 @@ go get -u gitlab.flyele.vip/server-side/go-zero/v2
 
    ```shell
    # for Go 1.15 and earlier
-   GO111MODULE=on go get -u gitlab.flyele.vip/server-side/go-zero/v2/tools/goctl@latest
+   GO111MODULE=on go get -u github.com/pengcainiao/tools/goctl@latest
    
    # for Go 1.16 and later
-   go install gitlab.flyele.vip/server-side/go-zero/v2/tools/goctl@latest
+   go install github.com/pengcainiao/tools/goctl@latest
    ```
 
    make sure goctl is executable.

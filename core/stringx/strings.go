@@ -3,7 +3,7 @@ package stringx
 import (
 	"errors"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
+	"github.com/pengcainiao/core/lang"
 )
 
 var (

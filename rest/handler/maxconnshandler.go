@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/rest/internal"
 )
 
 // MaxConns returns a middleware that limit the concurrent connections.

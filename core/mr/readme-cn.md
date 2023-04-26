@@ -54,7 +54,6 @@ import (
     "fmt"
     "log"
 
-    "gitlab.flyele.vip/server-side/go-zero/v2/core/mr"
 )
 
 func main() {

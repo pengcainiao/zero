@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pengcainiao/core/errorx"
+	"github.com/pengcainiao/core/hash"
+	"github.com/pengcainiao/core/stores/redis"
+	"github.com/pengcainiao/core/stores/redis/redistest"
+	"github.com/pengcainiao/core/syncx"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/errorx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/hash"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis/redistest"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
 )
 
 var _ Cache = (*mockedNode)(nil)

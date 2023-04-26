@@ -18,9 +18,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/iox"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/iox"
+	"github.com/pengcainiao/core/sysx"
+	"github.com/pengcainiao/core/timex"
 )
 
 const (

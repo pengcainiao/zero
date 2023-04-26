@@ -6,8 +6,8 @@ import (
 	"time"
 
 	red "github.com/go-redis/redis/v8"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stringx"
 )
 
 const (

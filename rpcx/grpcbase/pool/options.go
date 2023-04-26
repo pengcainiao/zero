@@ -21,9 +21,9 @@ import (
 	"os"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
+	"github.com/pengcainiao/core/env"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/clientinterceptors"
+	"github.com/pengcainiao/rpcx/clientinterceptors"
 
 	grpc_retry "github.com/grpc-ecosystem/go-grpc-middleware/retry"
 	"google.golang.org/grpc/balancer/roundrobin"

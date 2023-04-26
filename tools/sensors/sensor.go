@@ -5,11 +5,11 @@ import (
 	"net/url"
 	"sync"
 
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/sysx"
 	sdk "github.com/sensorsdata/sa-sdk-go"
 	"github.com/sensorsdata/sa-sdk-go/consumers"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
 )
 
 var (

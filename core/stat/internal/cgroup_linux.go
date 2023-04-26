@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/iox"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
+	"github.com/pengcainiao/core/iox"
+	"github.com/pengcainiao/core/lang"
 )
 
 const cgroupDir = "/sys/fs/cgroup"

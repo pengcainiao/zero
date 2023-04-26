@@ -7,9 +7,9 @@ import (
 	"net/http/httputil"
 
 	"github.com/golang-jwt/jwt/v4"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal/response"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/token"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/rest/internal/response"
+	"github.com/pengcainiao/rest/token"
 )
 
 const (

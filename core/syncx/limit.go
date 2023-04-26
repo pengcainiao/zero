@@ -3,7 +3,7 @@ package syncx
 import (
 	"errors"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
+	"github.com/pengcainiao/core/lang"
 )
 
 // ErrLimitReturn indicates that the more than borrowed elements were returned.

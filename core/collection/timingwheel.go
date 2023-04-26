@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/threading"
+	"github.com/pengcainiao/core/timex"
 )
 
 const drainWorkers = 8

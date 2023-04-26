@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	jsoniter "github.com/json-iterator/go"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 )
 
 var (

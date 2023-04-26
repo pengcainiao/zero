@@ -7,11 +7,11 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
+	"github.com/pengcainiao/core/discov/internal"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stringx"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/discov/internal"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

@@ -4,10 +4,10 @@ import (
 	"errors"
 	"log"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/errorx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/hash"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/cache"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
+	"github.com/pengcainiao/core/errorx"
+	"github.com/pengcainiao/core/hash"
+	"github.com/pengcainiao/core/stores/cache"
+	"github.com/pengcainiao/core/stores/redis"
 )
 
 // ErrNoRedisNode is an error that indicates no redis node.

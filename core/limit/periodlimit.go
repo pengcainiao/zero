@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
+	"github.com/pengcainiao/core/stores/redis"
 )
 
 // to be compatible with aliyun redis, we cannot use `local key = KEYS[1]` to reuse the key

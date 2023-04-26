@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/justinas/alice"
+	ztrace "github.com/pengcainiao/core/trace"
 	"github.com/stretchr/testify/assert"
-	ztrace "gitlab.flyele.vip/server-side/go-zero/v2/core/trace"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"

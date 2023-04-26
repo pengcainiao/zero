@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/pengcainiao/core/prometheus"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/prometheus"
 	"google.golang.org/grpc"
 )
 

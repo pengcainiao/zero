@@ -10,8 +10,8 @@ import (
 	"github.com/go-kit/kit/endpoint"
 	stdproto "github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/any"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcbase"
-	pb "gitlab.flyele.vip/server-side/go-zero/v2/rpcx/protos"
+	"github.com/pengcainiao/rpcx/grpcbase"
+	pb "github.com/pengcainiao/rpcx/protos"
 )
 
 func makeJoinedTasksEndpoint(svc Repository) endpoint.Endpoint {

@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stores/redis"
 	xrate "golang.org/x/time/rate"
 )
 

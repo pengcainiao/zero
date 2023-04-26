@@ -6,9 +6,9 @@ import (
 	"time"
 
 	red "github.com/go-redis/redis/v8"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mapping"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/mapping"
+	"github.com/pengcainiao/core/timex"
 )
 
 var (

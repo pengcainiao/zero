@@ -3,7 +3,7 @@ package service
 import (
 	"testing"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 )
 
 func TestServiceConf(t *testing.T) {

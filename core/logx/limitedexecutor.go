@@ -4,8 +4,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/timex"
 )
 
 type limitedExecutor struct {

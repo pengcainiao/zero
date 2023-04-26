@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"strings"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
+	"github.com/pengcainiao/core/env"
 
 	"github.com/gin-gonic/gin"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/trace"
+	"github.com/pengcainiao/core/trace"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/propagation"

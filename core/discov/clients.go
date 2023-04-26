@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/discov/internal"
+	"github.com/pengcainiao/core/discov/internal"
 )
 
 const (

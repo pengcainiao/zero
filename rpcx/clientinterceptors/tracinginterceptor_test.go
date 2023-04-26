@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"testing"
 
+	"github.com/pengcainiao/core/trace"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/trace"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"

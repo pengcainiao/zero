@@ -1,6 +1,6 @@
 package _map
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/tools/utils"
+import "github.com/pengcainiao/tools/utils"
 
 type Map map[string]interface {
 }

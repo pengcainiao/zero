@@ -1,6 +1,6 @@
 package prof
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/core/utils"
+import "github.com/pengcainiao/core/utils"
 
 type (
 	// A ProfilePoint is a profile time point.

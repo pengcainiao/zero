@@ -6,9 +6,9 @@ import (
 	"path"
 	"strings"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/search"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/pathvar"
+	"github.com/pengcainiao/core/search"
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/pathvar"
 )
 
 const (

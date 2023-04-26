@@ -5,11 +5,11 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
+	"github.com/pengcainiao/core/hash"
+	"github.com/pengcainiao/core/stores/cache"
+	"github.com/pengcainiao/core/stores/redis"
+	"github.com/pengcainiao/core/stringx"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/hash"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/cache"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
 )
 
 var (

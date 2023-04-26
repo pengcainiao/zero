@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/justinas/alice"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/codec"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/load"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/handler"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal/response"
+	"github.com/pengcainiao/core/codec"
+	"github.com/pengcainiao/core/load"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/rest/handler"
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/internal"
+	"github.com/pengcainiao/rest/internal/response"
 )
 
 // use 1000m to represent 100%

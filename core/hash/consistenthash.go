@@ -2,12 +2,11 @@ package hash
 
 import (
 	"fmt"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/mapping"
 	"sort"
 	"strconv"
 	"sync"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mapping"
 )
 
 const (

@@ -7,10 +7,10 @@ import (
 
 	_ "net/http/pprof"
 
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/threading"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
 )
 
 var (

@@ -3,11 +3,10 @@ package mr
 import (
 	"context"
 	"errors"
+	"github.com/pengcainiao/core/errorx"
+	"github.com/pengcainiao/core/lang"
 	"sync"
 	"sync/atomic"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/errorx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
 )
 
 const (

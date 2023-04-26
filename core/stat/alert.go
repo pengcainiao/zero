@@ -11,11 +11,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/executors"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/proc"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/executors"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/proc"
+	"github.com/pengcainiao/core/sysx"
+	"github.com/pengcainiao/core/timex"
 )
 
 const (

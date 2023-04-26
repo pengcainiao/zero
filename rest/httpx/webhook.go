@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	jsoniter "github.com/json-iterator/go"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/sysx"
 )
 
 //WebHookRebot 企业微信webhook 机器人

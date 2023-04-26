@@ -7,14 +7,14 @@ import (
 	stdjson "encoding/json"
 	"errors"
 	"fmt"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 	"io"
 	"net/http"
 	"time"
 
+	"github.com/pengcainiao/core/env"
 	zslog "github.com/rs/zerolog/log"
 	elastic "gitlab.flyele.vip/server-side/elasticv7"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
 )
 
 var (

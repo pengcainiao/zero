@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal"
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/internal"
 )
 
 const (

@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/errorx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/hash"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
+	"github.com/pengcainiao/core/errorx"
+	"github.com/pengcainiao/core/hash"
+	"github.com/pengcainiao/core/syncx"
 )
 
 type (

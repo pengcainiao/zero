@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 )
 
 const timeFormat = "0102150405"

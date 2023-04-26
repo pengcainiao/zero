@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pengcainiao/core/lang"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
 )
 
 const limit = 10

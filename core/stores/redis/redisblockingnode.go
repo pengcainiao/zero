@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	red "github.com/go-redis/redis/v8"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 )
 
 // ClosableNode interface represents a closable redis node.

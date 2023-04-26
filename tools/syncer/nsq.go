@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/queue/nsqueue"
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/core/queue/nsqueue"
 )
 
 var (

@@ -3,7 +3,7 @@ package sysx
 import (
 	"os"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
+	"github.com/pengcainiao/core/stringx"
 )
 
 var hostname string

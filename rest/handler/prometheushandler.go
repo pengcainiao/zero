@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/metric"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/prometheus"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal/response"
+	"github.com/pengcainiao/core/metric"
+	"github.com/pengcainiao/core/prometheus"
+	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/rest/internal/response"
 )
 
 const serverNamespace = "http_server"

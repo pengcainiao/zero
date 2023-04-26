@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/collection"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/proc"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
+	"github.com/pengcainiao/core/collection"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/proc"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/stringx"
+	"github.com/pengcainiao/core/threading"
 )
 
 const (

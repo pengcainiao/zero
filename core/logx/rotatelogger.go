@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/fs"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/fs"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/timex"
 )
 
 const (

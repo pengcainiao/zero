@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
+	sonyflake "github.com/pengcainiao/core/snowflake"
+	"github.com/pengcainiao/rest/httprouter"
 	"github.com/youzan/go-nsq"
-	sonyflake "gitlab.flyele.vip/server-side/go-zero/v2/core/snowflake"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
 )
 
 type message struct {

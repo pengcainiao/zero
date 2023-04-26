@@ -2,7 +2,7 @@ module github.com/zeromicro/go-zero/tools/goctl
 
 go 1.15
 
-replace gitlab.flyele.vip/server-side/go-zero/v2 v2.0.71 => ../../../go-zero
+replace github.com/pengcainiao v2.0.71 => ../../../go-zero
 
 require (
 	github.com/fatih/structtag v1.2.0

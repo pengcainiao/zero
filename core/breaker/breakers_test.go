@@ -3,10 +3,10 @@ package breaker
 import (
 	"errors"
 	"fmt"
+	"github.com/pengcainiao/core/stat"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
 )
 
 func init() {

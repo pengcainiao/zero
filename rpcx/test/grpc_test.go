@@ -6,14 +6,14 @@ import (
 	"testing"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcclient/operationsystem"
+	"github.com/pengcainiao/rpcx/grpcclient/operationsystem"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcbase"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcclient/clouddisk"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcclient/notice"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcclient/record"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcclient/task"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcclient/usercenter"
+	"github.com/pengcainiao/rpcx/grpcbase"
+	"github.com/pengcainiao/rpcx/grpcclient/clouddisk"
+	"github.com/pengcainiao/rpcx/grpcclient/notice"
+	"github.com/pengcainiao/rpcx/grpcclient/record"
+	"github.com/pengcainiao/rpcx/grpcclient/task"
+	"github.com/pengcainiao/rpcx/grpcclient/usercenter"
 )
 
 type RpcServer struct {

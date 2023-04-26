@@ -8,12 +8,12 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/jsonx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mathx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
+	"github.com/pengcainiao/core/jsonx"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/mathx"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/stores/redis"
+	"github.com/pengcainiao/core/syncx"
 )
 
 const (

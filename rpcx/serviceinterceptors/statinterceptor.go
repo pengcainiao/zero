@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/timex"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/peer"
 )

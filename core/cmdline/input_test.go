@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pengcainiao/core/iox"
+	"github.com/pengcainiao/core/lang"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/iox"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
 )
 
 func TestEnterToContinue(t *testing.T) {

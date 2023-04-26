@@ -2,6 +2,8 @@ package iox
 
 import (
 	"bytes"
+	"github.com/pengcainiao/core/fs"
+	"github.com/pengcainiao/core/stringx"
 	"io"
 	"io/ioutil"
 	"os"
@@ -9,8 +11,6 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/fs"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
 )
 
 func TestReadText(t *testing.T) {

@@ -1,6 +1,6 @@
 package discov
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/core/discov/internal"
+import "github.com/pengcainiao/core/discov/internal"
 
 // RegisterAccount registers the username/password to the given etcd cluster.
 func RegisterAccount(endpoints []string, user, pass string) {

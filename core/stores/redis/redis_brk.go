@@ -6,7 +6,7 @@ import (
 
 	red "github.com/go-redis/redis/v8"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
+	"github.com/pengcainiao/core/env"
 )
 
 func Client() RedisNode {
@@ -31,7 +31,7 @@ func Client() RedisNode {
 }
 
 func RedisClient() *red.Client {
-    if env.RedisMasterName != "" {
+	if env.RedisMasterName != "" {
 		var sentinelAddrs []string
 		_ = json.Unmarshal([]byte(env.RedisAddr), &sentinelAddrs)
 		conn, _ := getFailover(&Redis{

@@ -9,9 +9,9 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/pengcainiao/core/codec"
+	"github.com/pengcainiao/rest/httpx"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/codec"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
 )
 
 func TestGunzipHandler(t *testing.T) {

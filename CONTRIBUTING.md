@@ -40,7 +40,8 @@ We will help you to contribute in different areas like filing issues, developing
 getting your work reviewed and merged.
 
 If you have questions about the development process,
-feel free to [file an issue](https://gitlab.flyele.vip/server-side/go-zero/v2/issues/new/choose).
+
+[//]: # (feel free to [file an issue]&#40;https://github.com/pengcainiao/issues/new/choose&#41;.)
 
 ## Find something to work on
 
@@ -50,10 +51,10 @@ Here is how you get started.
 
 ### Find a good first topic
 
-[go-zero](https://gitlab.flyele.vip/server-side/go-zero/v2) has beginner-friendly issues that provide a good first issue.
-For example, [go-zero](https://gitlab.flyele.vip/server-side/go-zero/v2) has
-[help wanted](https://gitlab.flyele.vip/server-side/go-zero/v2/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and
-[good first issue](https://gitlab.flyele.vip/server-side/go-zero/v2/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+[go-zero](https://github.com/pengcainiao) has beginner-friendly issues that provide a good first issue.
+For example, [go-zero](https://github.com/pengcainiao) has
+[help wanted](https://github.com/pengcainiao/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and
+[good first issue](https://github.com/pengcainiao/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 labels for issues that should not need deep knowledge of the system.
 We can help new contributors who wish to work on such issues.
 
@@ -79,7 +80,7 @@ This is a rough outline of what a contributor's workflow looks like:
 - Create a topic branch from where to base the contribution. This is usually master.
 - Make commits of logical units.
 - Push changes in a topic branch to a personal fork of the repository.
-- Submit a pull request to [go-zero](https://gitlab.flyele.vip/server-side/go-zero/v2).
+- Submit a pull request to [go-zero](https://github.com/pengcainiao).
 
 ## Creating Pull Requests
 

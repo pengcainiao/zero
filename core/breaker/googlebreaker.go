@@ -1,11 +1,10 @@
 package breaker
 
 import (
+	"github.com/pengcainiao/core/collection"
+	"github.com/pengcainiao/core/mathx"
 	"math"
 	"time"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/collection"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mathx"
 )
 
 const (

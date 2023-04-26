@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pengcainiao/core/fs"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/fs"
 )
 
 func TestDailyRotateRuleMarkRotated(t *testing.T) {

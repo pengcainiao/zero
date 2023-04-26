@@ -4,7 +4,7 @@ import (
 	"io"
 	"sync"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/errorx"
+	"github.com/pengcainiao/core/errorx"
 )
 
 // A ResourceManager is a manager that used to manage resources.

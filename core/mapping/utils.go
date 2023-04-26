@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
+	"github.com/pengcainiao/core/stringx"
 )
 
 const (

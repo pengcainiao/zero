@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
+	"github.com/pengcainiao/rest/httpx"
 )
 
 const gzipEncoding = "gzip"

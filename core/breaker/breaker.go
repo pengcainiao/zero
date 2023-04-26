@@ -3,14 +3,13 @@ package breaker
 import (
 	"errors"
 	"fmt"
+	"github.com/pengcainiao/core/mathx"
+	"github.com/pengcainiao/core/proc"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/stringx"
+	"github.com/pengcainiao/core/timex"
 	"strings"
 	"sync"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mathx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/proc"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
 )
 
 const (

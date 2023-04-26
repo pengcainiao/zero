@@ -5,11 +5,10 @@ package datasyncer
 
 import (
 	"context"
+	"github.com/pengcainiao/rpcx/grpcbase"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 	"log"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcbase"
 )
 
 //GrpcClient grpc客户端，各服务无需重复开发客户端。

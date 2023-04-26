@@ -5,7 +5,7 @@ import (
 	"io"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/timex"
 )
 
 const durationCallerDepth = 3

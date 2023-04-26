@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
+	"github.com/pengcainiao/rest/httprouter"
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/963204765/httpclient/httplib"
@@ -219,6 +219,7 @@ func ArrayUnique(arr []string) []string {
 	}
 	return result
 }
+
 /**
  * 数组差集
  * @synopsis ArrayDiff
@@ -226,7 +227,7 @@ func ArrayUnique(arr []string) []string {
  * @param []string
  * @return []string
  */
-func ArrayDiff(a ,b []string) []string {
+func ArrayDiff(a, b []string) []string {
 	var diffArray []string
 	temp := map[string]struct{}{}
 

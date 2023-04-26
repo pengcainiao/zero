@@ -30,7 +30,6 @@ require (
 	github.com/spaolacci/murmur3 v1.1.0
 	github.com/stretchr/testify v1.7.1
 	github.com/youzan/go-nsq v1.7.11-HA
-	gitlab.flyele.vip/server-side/sqlx v1.4.32
 	go.etcd.io/etcd/api/v3 v3.5.2
 	go.etcd.io/etcd/client/v3 v3.5.2
 	go.opentelemetry.io/otel v1.7.0
@@ -52,14 +51,11 @@ require (
 
 require (
 	github.com/aliyun/aliyun-oss-go-sdk v2.2.2+incompatible
-	github.com/forgoer/openssl v1.2.1
 	github.com/go-playground/locales v0.13.0
 	github.com/go-playground/universal-translator v0.17.0
 	github.com/go-playground/validator/v10 v10.4.1
 	github.com/silenceper/wechat/v2 v2.0.4
 	github.com/tidwall/gjson v1.14.2
-	gitlab.flyele.vip/server-side/elasticv7 v1.0.3
-	gitlab.flyele.vip/server-side/go-zero/v2 v2.0.246
 	golang.org/x/crypto v0.8.0
 )
 

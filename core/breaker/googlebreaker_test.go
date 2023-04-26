@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pengcainiao/core/collection"
+	"github.com/pengcainiao/core/mathx"
+	"github.com/pengcainiao/core/stat"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/collection"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mathx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
 )
 
 const (

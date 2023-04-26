@@ -3,13 +3,13 @@ package rest
 import (
 	"os"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/conf"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
+	"github.com/pengcainiao/core/conf"
+	"github.com/pengcainiao/core/sysx"
 
 	"github.com/gin-gonic/gin"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/service"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/handler"
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/core/service"
+	"github.com/pengcainiao/rest/handler"
 )
 
 //NewGinServer 新建gin服务器

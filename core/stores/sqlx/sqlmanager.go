@@ -7,7 +7,7 @@ import (
 
 	"gitlab.flyele.vip/server-side/sqlx"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
+	"github.com/pengcainiao/core/syncx"
 )
 
 var (

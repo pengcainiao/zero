@@ -1,10 +1,9 @@
 package fs
 
 import (
+	"github.com/pengcainiao/core/hash"
 	"io/ioutil"
 	"os"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/hash"
 )
 
 // TempFileWithText creates the temporary file with the given content,

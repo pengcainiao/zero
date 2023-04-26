@@ -3,10 +3,9 @@ package grpcbase
 import (
 	"context"
 	"fmt"
+	"github.com/pengcainiao/rpcx/grpcbase/pool"
 	"os"
 	"sync"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcbase/pool"
 )
 
 var (

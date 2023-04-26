@@ -3,7 +3,7 @@ package syncx
 import (
 	"sync"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
+	"github.com/pengcainiao/core/lang"
 )
 
 // A DoneChan is used as a channel that can be closed multiple times and wait for done.

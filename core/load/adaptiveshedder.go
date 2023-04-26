@@ -7,11 +7,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/collection"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/collection"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/timex"
 )
 
 const (

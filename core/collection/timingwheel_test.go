@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/stringx"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/timex"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
 )
 
 const (

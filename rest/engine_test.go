@@ -10,8 +10,6 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/conf"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
 )
 
 func TestNewEngine(t *testing.T) {

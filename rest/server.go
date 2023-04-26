@@ -2,16 +2,15 @@ package rest
 
 import (
 	"crypto/tls"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/rest/handler"
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/internal/cors"
+	"github.com/pengcainiao/rest/router"
 	"log"
 	"net/http"
 	"path"
 	"time"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/handler"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal/cors"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/router"
 )
 
 type (

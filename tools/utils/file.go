@@ -3,9 +3,9 @@ package utils
 import (
 	"errors"
 	"fmt"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/tools"
-	"gitlab.flyele.vip/server-side/go-zero/v2/tools/syncer"
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/tools"
+	"github.com/pengcainiao/tools/syncer"
 	"mime/multipart"
 	"path"
 	"strconv"
@@ -17,27 +17,25 @@ func ByteToMB(i int) float64 {
 	return value
 }
 
-
-
-func UploadImage(file *multipart.FileHeader,filePath string) (url string,err error) {
+func UploadImage(file *multipart.FileHeader, filePath string) (url string, err error) {
 	// 判断格式
 	if !tools.InArray(path.Ext(file.Filename), []string{".gif", ".jpg", ".jpeg", ".png"}) {
-		return "",errors.New("")
+		return "", errors.New("")
 	}
-	return UploadFile(file,filePath)
+	return UploadFile(file, filePath)
 }
 
 // file 文件信息
 // filePath 文件路径，完整路径，非文件夹路径
-func UploadFile(file *multipart.FileHeader,filePath string) (url string,err error) {
+func UploadFile(file *multipart.FileHeader, filePath string) (url string, err error) {
 	f, err := file.Open()
 	if err != nil {
-		return "",err
+		return "", err
 	}
 	defer f.Close()
 	bucket, err := syncer.Oss().Bucket(env.OssBucketName)
 	if err != nil {
-		return url,err
+		return url, err
 	}
 	//s,_ :=os.Stat(filePath)
 	//if s.IsDir() {
@@ -46,7 +44,7 @@ func UploadFile(file *multipart.FileHeader,filePath string) (url string,err erro
 	// 开始上传文件
 	err = bucket.PutObject(filePath, f)
 	if err != nil {
-		return "",err
+		return "", err
 	}
-	return fmt.Sprintf("%s/%s?t=%d", env.OssBucketHost, filePath, time.Now().Unix()),nil
+	return fmt.Sprintf("%s/%s?t=%d", env.OssBucketHost, filePath, time.Now().Unix()), nil
 }

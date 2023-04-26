@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/963204765/httpclient/httplib"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mapping"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/pathvar"
+	"github.com/pengcainiao/core/mapping"
+	"github.com/pengcainiao/rest/httprouter"
+	"github.com/pengcainiao/rest/pathvar"
 )
 
 const (

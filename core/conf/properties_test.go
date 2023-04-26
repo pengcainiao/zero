@@ -1,11 +1,11 @@
 package conf
 
 import (
+	"github.com/pengcainiao/core/fs"
 	"os"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/fs"
 )
 
 func TestProperties(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"errors"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 )
 
 // ErrPaddingSize indicates bad padding size.

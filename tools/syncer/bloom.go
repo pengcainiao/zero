@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/bloom"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
+	"github.com/pengcainiao/core/bloom"
+	"github.com/pengcainiao/rest/httprouter"
 )
 
 var (

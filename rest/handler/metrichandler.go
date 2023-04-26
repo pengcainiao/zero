@@ -3,8 +3,8 @@ package handler
 import (
 	"net/http"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/timex"
 )
 
 // MetricHandler returns a middleware that stat the metrics.

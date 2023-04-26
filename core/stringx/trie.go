@@ -1,6 +1,6 @@
 package stringx
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
+import "github.com/pengcainiao/core/lang"
 
 const defaultMask = '*'
 

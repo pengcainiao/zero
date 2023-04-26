@@ -1,9 +1,8 @@
 package conf
 
 import (
+	"github.com/pengcainiao/core/env"
 	"time"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
 )
 
 type (

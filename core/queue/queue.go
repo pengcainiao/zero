@@ -6,11 +6,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/rescue"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/rescue"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/threading"
+	"github.com/pengcainiao/core/timex"
 )
 
 const queueName = "queue"

@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/rest/httprouter"
 	"github.com/tidwall/gjson"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
 )
 
 func Request() gin.HandlerFunc {

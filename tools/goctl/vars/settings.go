@@ -4,7 +4,7 @@ const (
 	// ProjectName the const value of zero
 	ProjectName = "zero"
 	// ProjectOpenSourceURL the github url of go-zero
-	ProjectOpenSourceURL = "gitlab.flyele.vip/server-side/go-zero/v2"
+	ProjectOpenSourceURL = "github.com/pengcainiao"
 	// OsWindows represents os windows
 	OsWindows = "windows"
 	// OsMac represents os mac

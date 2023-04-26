@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/proc"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/proc"
 )
 
 // StartOption defines the method to customize http.Server.

@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/pengcainiao/core/bloom"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/bloom"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/queue/nsqueue"
+	"github.com/pengcainiao/core/queue/nsqueue"
 )
 
 func TestNSQ(t *testing.T) {

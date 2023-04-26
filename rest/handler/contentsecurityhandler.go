@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/codec"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal/security"
+	"github.com/pengcainiao/core/codec"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/internal/security"
 )
 
 const contentSecurity = "X-Content-Security"

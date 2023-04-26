@@ -6,11 +6,12 @@ package datasyncer
 
 import (
 	"context"
+	"github.com/pengcainiao/rpcx/grpcbase"
+	pb "github.com/pengcainiao/rpcx/protos"
 	"log"
 
 	grpctransport "github.com/go-kit/kit/transport/grpc"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcbase"
-	pb "gitlab.flyele.vip/server-side/go-zero/v2/rpcx/protos"
+
 	"google.golang.org/grpc"
 )
 

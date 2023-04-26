@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/contextx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/threading"
+	"github.com/pengcainiao/core/contextx"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/threading"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

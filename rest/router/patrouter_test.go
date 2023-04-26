@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/pathvar"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/pathvar"
 )
 
 const (

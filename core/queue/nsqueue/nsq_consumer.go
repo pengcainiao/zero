@@ -8,18 +8,18 @@ import (
 	"strconv"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
+	"github.com/pengcainiao/core/sysx"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
+	"github.com/pengcainiao/core/env"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/sqlx"
+	"github.com/pengcainiao/core/stores/redis"
+	"github.com/pengcainiao/core/stores/sqlx"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
+	"github.com/pengcainiao/rest/httpx"
 
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/rest/httprouter"
 	"github.com/youzan/go-nsq"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
 )
 
 const NsqTraceID string = "nsq_trace_id"

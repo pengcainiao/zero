@@ -10,8 +10,8 @@ import (
 	"net"
 	"net/http"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/codec"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/codec"
+	"github.com/pengcainiao/core/logx"
 )
 
 const maxBytes = 1 << 20 // 1 MiB

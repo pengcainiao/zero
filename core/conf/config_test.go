@@ -1,13 +1,13 @@
 package conf
 
 import (
+	"github.com/pengcainiao/core/fs"
+	"github.com/pengcainiao/core/hash"
 	"io/ioutil"
 	"os"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/fs"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/hash"
 )
 
 func TestLoadConfig_notExists(t *testing.T) {

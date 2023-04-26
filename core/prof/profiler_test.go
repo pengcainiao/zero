@@ -3,7 +3,7 @@ package prof
 import (
 	"testing"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/utils"
+	"github.com/pengcainiao/core/utils"
 )
 
 func TestProfiler(t *testing.T) {

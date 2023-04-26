@@ -7,12 +7,12 @@ import (
 	"strconv"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
+	"github.com/pengcainiao/core/env"
 
 	red "github.com/go-redis/redis/v8"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/breaker"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mapping"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
+	"github.com/pengcainiao/core/breaker"
+	"github.com/pengcainiao/core/mapping"
+	"github.com/pengcainiao/core/syncx"
 )
 
 const (

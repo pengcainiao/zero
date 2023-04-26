@@ -138,7 +138,6 @@ github.com/fatih/color v1.12.0/go.mod h1:ELkj/draVOlAH/xkhN6mQ50Qd0MPOk5AAr3maGE
 github.com/fatih/structs v1.1.0 h1:Q7juDM0QtcnhCpeyLGQKyg4TOIghuNXrkL32pHAUMxo=
 github.com/fatih/structs v1.1.0/go.mod h1:9NiDSp5zOcgEDl+j00MP/WkGVPOlPRLejGD8Ga6PJ7M=
 github.com/fogleman/gg v1.2.1-0.20190220221249-0403632d5b90/go.mod h1:R/bRT+9gY/C5z7JzPU0zXsXHKM4/ayA+zqcVNZzPa1k=
-github.com/forgoer/openssl v1.2.1 h1:Qvgk8K+pKayd3QG/f7fB2LJm1ObYNA2iqYraipxm8jQ=
 github.com/forgoer/openssl v1.2.1/go.mod h1:NMVFOzYeLVR7UiGTxsa+A21nrERTZ3Rv2JHDPcJpDyI=
 github.com/franela/goblin v0.0.0-20210519012713-85d372ac71e2/go.mod h1:VzmDKDJVZI3aJmnRI9VjAn9nJ8qPPsN1fqzr9dqInIo=
 github.com/franela/goreq v0.0.0-20171204163338-bcd34c9993f8/go.mod h1:ZhphrRTfi2rbfLwlschooIH4+wKKDR4Pdxhh+TRoA20=
@@ -539,8 +538,8 @@ github.com/yuin/gopher-lua v0.0.0-20200816102855-ee81675732da h1:NimzV1aGyq29m5u
 github.com/yuin/gopher-lua v0.0.0-20200816102855-ee81675732da/go.mod h1:E1AXubJBdNmFERAOucpDIxNzeGfLzg0mYh+UfMWdChA=
 gitlab.flyele.vip/server-side/elasticv7 v1.0.3 h1:f5F3XsnuqTiVZMyDwqeRoPQa8nYjSBGJQM2WphFj2WE=
 gitlab.flyele.vip/server-side/elasticv7 v1.0.3/go.mod h1:2H46U9gPrtvX+sAKEx859G7ite8NZwY+GciTjFRnn3s=
-gitlab.flyele.vip/server-side/go-zero/v2 v2.0.246 h1:a22VGhgZmtKSH78xvo27zn10xu6kgbYGTHo6ZtciviY=
-gitlab.flyele.vip/server-side/go-zero/v2 v2.0.246/go.mod h1:BTxb+QhYvhcHAeMd7CgAwcVtIieOQ0EwFjFrMTDKMhc=
+github.com/pengcainiao v2.0.246 h1:a22VGhgZmtKSH78xvo27zn10xu6kgbYGTHo6ZtciviY=
+github.com/pengcainiao v2.0.246/go.mod h1:BTxb+QhYvhcHAeMd7CgAwcVtIieOQ0EwFjFrMTDKMhc=
 gitlab.flyele.vip/server-side/sqlx v1.4.32 h1:Me/WY7TOFFNRJNNpUdFBmkPlAWV58pAiIT0XRjyxxTw=
 gitlab.flyele.vip/server-side/sqlx v1.4.32/go.mod h1:FNJmjfLMFNO2cHXddBWIQS9YlqM/i/37BOXMgWRguLY=
 go.etcd.io/etcd/api/v3 v3.5.0/go.mod h1:cbVKeC6lCfl7j/8jBhAK6aIYO9XOjdptoxU/nLQcPvs=
@@ -777,7 +776,6 @@ golang.org/x/sys v0.7.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/term v0.0.0-20210927222741-03fcf44c2211/go.mod h1:jbD1KX2456YbFQfuXm/mYQcufACuNUgVhRMnK/tPxf8=
 golang.org/x/term v0.5.0/go.mod h1:jMB1sMXY+tzblOD4FWmEbocvup2/aLOaQEp7JmGp78k=
-golang.org/x/term v0.7.0 h1:BEvjmm5fURWqcfbSKTdpkDXYBrUS1c0m8agp14W48vQ=
 golang.org/x/term v0.7.0/go.mod h1:P32HKFT3hSsZrRxla30E9HqToFYAQPCMs/zFMBUFqPY=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=

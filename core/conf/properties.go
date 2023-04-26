@@ -2,12 +2,11 @@ package conf
 
 import (
 	"fmt"
+	"github.com/pengcainiao/core/iox"
 	"os"
 	"strconv"
 	"strings"
 	"sync"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/iox"
 )
 
 // PropertyError represents a configuration error message.

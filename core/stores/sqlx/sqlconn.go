@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/breaker"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/breaker"
+	"github.com/pengcainiao/core/logx"
 	"gitlab.flyele.vip/server-side/sqlx"
 )
 

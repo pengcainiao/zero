@@ -6,8 +6,8 @@ import (
 
 	"go.opentelemetry.io/otel/attribute"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/trace"
+	"github.com/pengcainiao/core/sysx"
+	"github.com/pengcainiao/core/trace"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"
 	oteltrace "go.opentelemetry.io/otel/trace"

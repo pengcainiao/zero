@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pengcainiao/rest/internal"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal"
 )
 
 func init() {

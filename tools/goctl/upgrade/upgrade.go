@@ -11,9 +11,9 @@ import (
 // Upgrade gets the latest goctl by
 // go install github.com/zeromicro/go-zero/tools/goctl@latest
 func Upgrade(_ *cli.Context) error {
-	cmd := `GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go install gitlab.flyele.vip/server-side/go-zero/v2/tools/goctl@latest`
+	cmd := `GO111MODULE=on GOPROXY=https://goproxy.cn/,direct go install github.com/pengcainiao/tools/goctl@latest`
 	if runtime.GOOS == "windows" {
-		cmd = `set GOPROXY=https://goproxy.cn,direct && go install gitlab.flyele.vip/server-side/go-zero/v2/tools/goctl@latest`
+		cmd = `set GOPROXY=https://goproxy.cn,direct && go install github.com/pengcainiao/tools/goctl@latest`
 	}
 	info, err := execx.Run(cmd, "")
 	if err != nil {

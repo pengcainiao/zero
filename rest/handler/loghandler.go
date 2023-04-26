@@ -14,13 +14,13 @@ import (
 	"strings"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/iox"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/utils"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal"
+	"github.com/pengcainiao/core/iox"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/timex"
+	"github.com/pengcainiao/core/utils"
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/internal"
 )
 
 const (

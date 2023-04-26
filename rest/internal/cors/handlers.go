@@ -3,7 +3,7 @@ package cors
 import (
 	"net/http"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal/response"
+	"github.com/pengcainiao/rest/internal/response"
 )
 
 const (

@@ -12,19 +12,19 @@ import (
 	"testing"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/queue/nsqueue"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/sysx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/tools/syncer"
+	"github.com/pengcainiao/core/queue/nsqueue"
+	"github.com/pengcainiao/core/sysx"
+	"github.com/pengcainiao/tools/syncer"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
+	"github.com/pengcainiao/rest/httprouter"
 
 	"github.com/gin-gonic/gin"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 
+	"github.com/pengcainiao/core/conf"
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/router"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/conf"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/router"
 )
 
 func TestNewGin(t *testing.T) {

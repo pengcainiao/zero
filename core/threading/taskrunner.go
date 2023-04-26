@@ -1,8 +1,8 @@
 package threading
 
 import (
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/rescue"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/rescue"
 )
 
 // A TaskRunner is used to control the concurrency of goroutines.

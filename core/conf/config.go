@@ -2,12 +2,11 @@ package conf
 
 import (
 	"fmt"
+	"github.com/pengcainiao/core/mapping"
 	"io/ioutil"
 	"log"
 	"os"
 	"path"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mapping"
 )
 
 var loaders = map[string]func([]byte, interface{}) error{

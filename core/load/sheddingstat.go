@@ -4,8 +4,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stat"
 )
 
 type (

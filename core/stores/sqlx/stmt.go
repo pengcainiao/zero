@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/timex"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/syncx"
+	"github.com/pengcainiao/core/timex"
 )
 
 const defaultSlowThreshold = time.Millisecond * 1000

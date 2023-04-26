@@ -5,9 +5,9 @@ package datasyncer
 
 import (
 	"context"
+	"github.com/pengcainiao/rpcx/grpcbase"
 
 	jsoniter "github.com/json-iterator/go"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rpcx/grpcbase"
 )
 
 var (

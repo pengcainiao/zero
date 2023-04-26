@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
+	"github.com/pengcainiao/core/env"
 
 	red "github.com/go-redis/redis/v8"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/trace"
+	"github.com/pengcainiao/core/trace"
 	"go.opentelemetry.io/otel/attribute"
 	oteltrace "go.opentelemetry.io/otel/trace"
 )

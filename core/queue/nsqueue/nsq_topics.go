@@ -4,11 +4,11 @@ import (
 	"context"
 	"errors"
 
+	"github.com/pengcainiao/core/conf"
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/rest/httprouter"
 	"github.com/youzan/go-nsq"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/conf"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
 )
 
 var (

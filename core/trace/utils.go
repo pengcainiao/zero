@@ -7,7 +7,7 @@ import (
 
 	"go.opentelemetry.io/otel"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 	oteltrace "go.opentelemetry.io/otel/trace"
 
 	"go.opentelemetry.io/otel/attribute"

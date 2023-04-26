@@ -10,13 +10,13 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/mathx"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/core/stores/redis"
+	"github.com/pengcainiao/core/stores/redis/redistest"
+	"github.com/pengcainiao/core/syncx"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mathx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis/redistest"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/syncx"
 )
 
 var errTestNotFound = errors.New("not found")

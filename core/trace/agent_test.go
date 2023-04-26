@@ -3,8 +3,8 @@ package trace
 import (
 	"testing"
 
+	"github.com/pengcainiao/core/logx"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
 )
 
 func TestStartAgent(t *testing.T) {

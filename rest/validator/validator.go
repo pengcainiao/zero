@@ -16,15 +16,15 @@ import (
 	en_translations "github.com/go-playground/validator/v10/translations/en"
 	zh_translations "github.com/go-playground/validator/v10/translations/zh"
 	zh_tw_translations "github.com/go-playground/validator/v10/translations/zh_tw"
+	"github.com/pengcainiao/core/env"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stores/redis"
+	"github.com/pengcainiao/rest/httprouter"
+	"github.com/pengcainiao/tools"
+	"github.com/pengcainiao/tools/syncer"
 	"github.com/silenceper/wechat/v2"
 	"github.com/silenceper/wechat/v2/miniprogram"
 	"github.com/silenceper/wechat/v2/miniprogram/config"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/env"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httprouter"
-	"gitlab.flyele.vip/server-side/go-zero/v2/tools"
-	"gitlab.flyele.vip/server-side/go-zero/v2/tools/syncer"
 )
 
 var (

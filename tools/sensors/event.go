@@ -1,7 +1,7 @@
 package sensors
 
 import (
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/mapping"
+	"github.com/pengcainiao/core/mapping"
 )
 
 type Event interface {

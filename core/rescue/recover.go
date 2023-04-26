@@ -1,6 +1,6 @@
 package rescue
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+import "github.com/pengcainiao/core/logx"
 
 // Recover is used with defer to do cleanup on panics.
 // Use it like:

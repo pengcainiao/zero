@@ -1,6 +1,6 @@
 package events
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/tools/sensors"
+import "github.com/pengcainiao/tools/sensors"
 
 type AddIssueParticipantEvent struct {
 	sensors.BaseEvent

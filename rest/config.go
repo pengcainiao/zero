@@ -3,7 +3,7 @@ package rest
 import (
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/service"
+	"github.com/pengcainiao/core/service"
 )
 
 type (

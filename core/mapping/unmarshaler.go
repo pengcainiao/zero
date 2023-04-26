@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/jsonx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/lang"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stringx"
+	"github.com/pengcainiao/core/jsonx"
+	"github.com/pengcainiao/core/lang"
+	"github.com/pengcainiao/core/stringx"
 )
 
 const (

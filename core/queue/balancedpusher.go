@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 )
 
 // ErrNoAvailablePusher indicates no pusher available.

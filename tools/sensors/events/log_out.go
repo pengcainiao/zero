@@ -1,10 +1,10 @@
 package events
 
-import "gitlab.flyele.vip/server-side/go-zero/v2/tools/sensors"
+import "github.com/pengcainiao/tools/sensors"
 
 type LogOutEvent struct {
 	sensors.BaseEvent
-	ActivePassive string `json:"active_passive,omitempty"`  // 主动被动操作
+	ActivePassive string `json:"active_passive,omitempty"` // 主动被动操作
 }
 
 func (event LogOutEvent) Name() string {

@@ -4,11 +4,11 @@ import (
 	"net/http"
 	"sync"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/load"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stat"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/httpx"
-	"gitlab.flyele.vip/server-side/go-zero/v2/rest/internal/response"
+	"github.com/pengcainiao/core/load"
+	"github.com/pengcainiao/core/logx"
+	"github.com/pengcainiao/core/stat"
+	"github.com/pengcainiao/rest/httpx"
+	"github.com/pengcainiao/rest/internal/response"
 )
 
 const serviceType = "api"

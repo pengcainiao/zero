@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/logx"
+	"github.com/pengcainiao/core/logx"
 
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/conf"
+	"github.com/pengcainiao/core/conf"
 
 	"go.etcd.io/etcd/api/v3/mvccpb"
 	"go.etcd.io/etcd/api/v3/v3rpc/rpctypes"
