@@ -1,0 +1,91 @@
+syntax = "proto3";
+package pb ;
+option go_package = ".;pb";
+
+import "protos/grpc_base.proto";
+
+message GetLabelBindRequest {
+  string ObjectID = 1;
+  UserContext Context = 3;
+}
+
+message TagBindResp {
+  string ID = 1;
+  string TagID = 2;
+  string UserID = 3;
+  string ObjectID = 4;
+  string Name = 5;
+  string Color = 6;
+}
+
+message GetLabelBindResponse {
+  repeated TagBindResp TagBinds = 1;
+}
+
+message GetUserBindTagRequest {
+  string UserID = 1;
+  string TagID = 2;
+  UserContext Context = 3;
+}
+
+message GetUserBindTagResponse {
+  repeated TagBindResp TagBinds = 1;
+}
+
+message GetViewBindNumRequest {
+  string UserID = 1;
+  UserContext Context = 2;
+}
+
+message GetViewBindNumResponse {
+  int64 Num = 1;
+}
+
+message GetLabelByIDRequest {
+  string LabelID = 1;
+  UserContext Context = 2;
+}
+
+message GetLabelByIDResponse {
+  string ID = 1;
+  string Name = 2;
+  string CreatorID = 3;
+  string Color = 4;
+  int32  Type = 5;
+  int32  State = 6;
+  int64 CreateAt = 7;
+  int64 UpdateAt = 8;
+}
+
+message BatchGetLabelByIDRequest{
+  repeated string LabelsID  = 1;
+  UserContext Context = 2;
+}
+
+message BatchGetLabelByIDResponse{
+  repeated GetLabelByIDResponse Labels = 1;
+}
+
+message BatchGetTagBindsRequest{
+  UserContext Context = 1;
+  string ObjID  = 2;
+}
+
+message BatchGetTagBindsResponse{
+    repeated TagBindResp Labels = 1;
+}
+
+service Label {
+  // GetLabelBind 根据绑定对象获取标签
+  rpc GetLabelBind(GetLabelBindRequest) returns (Response);
+  // GetUserBindTag 获取用户绑定指定标签列表
+  rpc GetUserBindTag(GetUserBindTagRequest) returns (Response);
+  // GetViewBindNum 获取用户自定义视图数
+  rpc GetViewBindNum(GetViewBindNumRequest) returns (Response);
+  // GetLabelByID 根据ID查标签详情
+  rpc GetLabelByID(GetLabelByIDRequest) returns (Response);
+  // BatchGetLabelByID 根据ID批量查标签详情
+  rpc BatchGetLabelByID(BatchGetLabelByIDRequest) returns (Response);
+  // BatchGetTagBinds 批量查询标签绑定列表
+  rpc BatchGetTagBinds(BatchGetTagBindsRequest) returns (Response);
+}

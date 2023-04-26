@@ -1,0 +1,85 @@
+syntax = "proto3";
+package pb ;
+option go_package = ".;pb";
+
+import "protos/grpc_base.proto";
+
+message SendMessageRequest{
+  int32 MessageType = 1;    //消息类型
+  repeated string UserID = 2;        //用户ID
+  string MsgContent = 3;    //消息文本，图片链接
+  string Href = 4;          //链接
+  string Title = 5;         //标题
+  string Desc = 6;          //描述
+  repeated string AcceptedUserID = 7;        //已经接受的用户ID
+  UserContext Context = 8;
+}
+
+message SendMessageResponse{
+  int32 Code = 1;
+}
+
+message SendCorpTempMsgRequest {
+  string FirstTitle = 1;        // 一级标题
+  string FirstTitleDetail = 2;  // 一级标题辅助信息
+  string Content = 3;           // 普通文本
+  int64  CreateAt = 4;          // 创建时间
+  string CreatorID = 5;         // 创建人
+  string Url = 6;               // 跳转地址
+  string MsgType = 7;           // 消息类型
+  repeated string NotifyUserID = 8;        //通知的用户ID
+  string TaskID = 9;
+  string WorkspaceID = 10;
+  string ProjectID = 11;
+  UserContext Context = 12;
+}
+
+message SendCorpTempMsgResponse {
+  int32 Code = 1;
+  string Msg = 2;
+}
+
+message UserCorpDetail {
+  string UserID = 1;
+  string CorpID = 2;
+  string CorpName = 3;
+  string Version = 4;
+  int32 AppStatus = 5;
+  int64 UserLimit = 6;
+  int32 IsVisible = 7;
+  int32 UserStatus = 8;
+}
+
+message GetUserCorpDetailRequest {
+  repeated string UserID = 1;
+  UserContext Context = 2;
+}
+
+message GetUserCorpDetailResponse {
+  repeated UserCorpDetail Details = 1;
+}
+
+message CorpDetail {
+  string CorpID = 1;
+  string CorpName = 2;
+  int64 ExpiredTime = 3;
+  string Version = 4;
+  int32 AppStatus = 5;
+  int64 UserLimit = 6;
+}
+
+message BatchGetCorpDetailRequest {
+  repeated string CorpIDs = 1;
+  UserContext Context = 2;
+}
+
+message BatchGetCorpDetailResponse {
+  repeated CorpDetail Details = 1;
+}
+
+service OfficialListener{
+  rpc SendMessage(SendMessageRequest) returns(Response);              //企业微信发送消息
+  rpc SendCorpTempMsg(SendCorpTempMsgRequest) returns (Response);     //发送企微模版消息
+  rpc GetUserCorpDetail(GetUserCorpDetailRequest) returns (Response); //获取用户企业详情
+  rpc BatchGetCorpDetail(BatchGetCorpDetailRequest) returns (Response); // 批量查询企业信息
+}

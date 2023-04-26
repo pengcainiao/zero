@@ -1,0 +1,195 @@
+syntax = "proto3";
+package pb ;
+option go_package = ".;pb";
+
+import "protos/grpc_base.proto";
+
+message FileDetailRequest{
+  repeated string Files = 1;
+  UserContext Context = 2;
+}
+
+message FileDetailResponse{
+  repeated FileDetail Detail = 1;
+}
+
+message FileDetail{
+  string FileID = 1 ;
+  string FileName = 2 ;
+}
+
+message AssociatedFilesRequest{
+  string FlyeleID = 1;
+  UserContext Context = 2;
+}
+
+message AssociatedFilesResponse{
+  int32 Count = 1;
+}
+
+message UploadFileRequest{
+  string FilePath = 1 ; //文件路径
+  bytes Content = 2 ;//图片的二进制形式
+  string OssBucketName = 3 ;//bucket名称
+  UserContext Context = 4;
+}
+
+message GetFilesNameRequest{
+  string FlyeleID = 1 ; //事项ID
+  repeated string FilesID = 2 ; //文件ID
+  UserContext Context = 3;
+}
+
+message GetFilesNameResponse{
+  map<string, string> Names = 1;       // 文件名
+}
+
+message BatchUnbindFileRequest{
+  string FlyeleID = 1;          // 飞项id
+  string FlyeleType = 2;        // 类型
+  string CommentID = 3;         // 评论id
+  repeated string FilesID = 4;  // 文件id
+  UserContext Context = 5;
+}
+
+message FileSensorsConfig {
+  string FileID = 1; //文件ID
+  string Origin = 2; //文件来源
+  string Entry = 3;  //入口
+}
+
+message BatchBindFileRequest {
+  string FlyeleType = 1;  //关联业务类型 task record"
+  string FlyeleID = 2;    //关联业务ID
+  string CommentID = 3;   //评论ID，关联评论时任务ID必填
+  int32  Catalog = 4;     //类型 背景信息
+  string Entry = 5;       //神策埋点
+  string FileUpload = 6;  //神策埋点
+  repeated FileSensorsConfig FileSensorsConfigs = 7;
+  UserContext Context = 8;
+}
+
+message FileSyncRequest {
+  repeated string  RequesterUID = 1;  //需要同步的用户ID列表
+  string  FlyeleID = 2;               //事项ID
+  string  FlyeleType = 3;             //事项类型
+  UserContext Context = 4;
+}
+
+message TaskFilesRequest{
+  string TaskID =1 ;
+  UserContext Context = 2;
+}
+
+message TaskFilesResponse{
+  repeated TaskFiles TaskFiles = 1;                           
+}
+
+message TaskFiles {
+  string FileID =1 ;
+  string FileName = 2 ;
+  string Resources =3 ;
+  string CreatorID =4 ;
+  string CommentID =5 ;
+}
+
+message GetBindLogWithAttachmentRequest {
+  string FileId = 1;
+  string FlyeleId = 2;
+  string FlyeleType = 3;
+  UserContext Context = 4;
+}
+
+message GetBindLogWithAttachmentResponse {
+  string FileId = 1;
+  string FlyeleId = 2;
+  string FlyeleType = 3;
+  string BoundBy = 4;
+  string CommentId = 5;
+  string CreatorId = 6;
+}
+
+message GetFileAddrByFileIDRequest {
+  string FileId = 1;
+  UserContext Context = 2;
+}
+
+message GetFileAddrByFileIDResponse {
+  string FileAddr = 1;
+}
+
+message GetBindFileSizeRequest {
+  string FlyeleID = 1;
+  string FlyeleType = 2;
+  UserContext Context = 3;
+}
+
+message GetBindFileSizeResponse {
+  int64 TotalSize = 1;
+}
+
+message GetFileByFileIDRequest {
+  string FileId = 1;
+  UserContext Context = 2;
+}
+
+message GetProjectFileTotalRequest {
+  string ProjectID = 1;
+  UserContext Context = 2;
+}
+
+message GetProjectFileTotalResponse {
+  int32 Total = 1;
+}
+
+
+message GetFilesByFileIDsRequest {
+  repeated string FileId = 1;
+  UserContext Context = 2;
+}
+
+
+message GetFilesByFileIDsResponse{
+  repeated GetFileByFileIDResponse Files = 1;
+}
+
+message GetFileByFileIDResponse {
+  string Id = 1;
+  string FileName = 2;
+  string Resource = 3;
+  int32 Length = 4;
+  string Md5 = 5;
+  string CreatorId =6;
+  string Extension =7;
+  string FlyeleType = 8;
+  string FlyeleId = 9;
+}
+
+message GetUsersFileUsedCapRequest {
+  repeated string UserID = 1;
+  repeated string WorkspaceID = 2;
+  UserContext Context = 3;
+}
+
+message GetUsersFileUsedCapResponse {
+  int64 AllCap = 1;
+}
+
+
+service CloudDisk{
+  rpc FileDetail(FileDetailRequest) returns(Response);              //查询文件详情
+  rpc AssociatedFiles(AssociatedFilesRequest) returns(Response);    //查询flyele_id关联的文件列表
+  rpc UploadFile(UploadFileRequest) returns (Response) ;            //上传文件
+  rpc GetFilesName(GetFilesNameRequest) returns (Response) ;        //获取文件名
+  rpc BatchUnbindFile(BatchUnbindFileRequest) returns (Response) ;  //批量解绑文件
+  rpc BatchBindFile(BatchBindFileRequest) returns (Response) ;      //批量绑定文件
+  rpc FileSync(FileSyncRequest) returns (Response);                 //文件同步
+  rpc TaskFiles(TaskFilesRequest) returns(Response) ;               //获取事项文件列表
+  rpc GetBindLogWithAttachment(GetBindLogWithAttachmentRequest) returns (Response); //获取绑定关系和文件信息
+  rpc GetFileAddrByFileID(GetFileAddrByFileIDRequest) returns (Response); //根据文件ID换取文件地址
+  rpc GetBindFileSize(GetBindFileSizeRequest) returns (Response); // 获取绑定对象下的文件大小
+  rpc GetFileByFileID(GetFileByFileIDRequest) returns (Response); //根据文件ID查询文件信息
+  rpc GetProjectFileTotal(GetProjectFileTotalRequest) returns (Response); //根据文件ID查询文件信息
+  rpc GetFilesByFileIDs(GetFilesByFileIDsRequest) returns (Response); //根据文件IDs批量查询文件信息
+  rpc GetUsersFileUsedCap(GetUsersFileUsedCapRequest) returns (Response); // 获取用户已使用文件容量
+}

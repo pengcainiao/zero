@@ -1,0 +1,651 @@
+syntax = "proto3";
+package pb ;
+option go_package = ".;pb";
+
+import "protos/grpc_base.proto";
+
+message RemindAt {
+  repeated int64 StartRemind = 1;                 // 开始时间提醒
+  repeated int64 EndRemind = 2;                   // 截止时间提醒
+  repeated int64 AloneRemind = 3;                 // 自定义提醒
+  int32 MaxAloneTotal = 4;                        // 最大自定义提醒数量
+}
+
+message GetTaskRequest{
+  string TaskID = 1;
+  UserContext Context = 2;
+}
+
+message GetTaskResponse{
+  string TaskID = 1;                              // 事项id
+  string Title = 2;                               // 标题
+  string Detail = 3;                              // 描述
+  int32 MatterType = 4;                           // 事项类型
+  int64 StartTime = 5;                            // 开始时间
+  int32 StartTimeFullDay = 6;                     // 开始时间全天事项
+  int64 EndTime = 7;                              // 结束时间
+  int32 EndTimeFullDay = 8;                       // 结束时间全天事项
+  string ExecuteAddr = 9;                         // 地点
+  RemindAt RemindAt = 10;                         // 提醒时间
+  int32 RepeatType = 11;                          // 重复类型
+  int64 EndRepeatAt = 12;                         // 截止重复时间
+  map<string, bool> Widget = 13;                  // 控件
+  int32 Category = 14;                            // 事项分类
+  string ParentID = 15;                           // 父级id
+  string ProjectID = 16;                          // 项目id
+  string CreatorID = 17;                          // 创建人id
+  int64 CreateAt = 18;                            // 创建时间
+  string ProjectCreator = 19;                     // 事项所属项目创建人ID
+}
+
+message GetTasksNameRequest{
+  string RefTaskID = 1;                           // 任务ID，多个用逗号隔开
+  UserContext Context = 2;
+}
+
+message GetTasksNameResponse{
+  map<string, string> Data = 1;                   // map[ref_task_id]ref_task_name
+}
+
+message GetTaskDispatchRequest{
+  string DispatchID = 1;                          // 派发任务ID，多个用逗号隔开
+  string RefTaskID = 2;                           // 任务ID，多个用逗号隔开
+  UserContext Context = 3;
+}
+
+message GetTaskDispatchResponse{
+  string DispatchID = 1;                          // 派发任务id
+  string RefTaskID = 2;                           // 关联事项id
+  string CreatorID = 3;                           // 创建人id
+  string TakerID = 4;                             // 承接人id
+  string Title = 5;                               // 事项标题
+  int32 MatterType = 6;                           // 事项类型
+  int32 Identity = 7;                             // 承接人身份
+  int32 State = 8;                                // 事项状态
+  int32 PersonalState = 9;                        // 个人状态
+  int32 OperateState = 10;                        // 操作状态
+  int64 StartTime = 11;                           // 开始时间
+  int64 EndTime = 12;                             // 结束时间
+  int64 ExecuteAt = 13;                           // 启动时间
+  map<string, int64> PersonalRemindAt = 14;       // 个人提醒时间
+  int64 FinishTime = 15;                          // 完成时间
+  int64 CreateAt = 16;                            // 创建时间
+}
+
+message GetTaskTakersRequest{
+  string TaskID = 1;                              // 事项id
+  string TakerID = 2;                             // 承接人id
+  UserContext Context = 3;
+}
+
+message GetTaskTakersResponse{
+  string TaskID = 1;                              // 事项id
+  string Title = 2;                               // 标题
+  string Detail = 3;                              // 描述
+  int32 MatterType = 4;                           // 事项类型
+  int64 StartTime = 5;                            // 开始时间
+  int32 StartTimeFullDay = 6;                     // 开始时间全天事项
+  int64 EndTime = 7;                              // 结束时间
+  int32 EndTimeFullDay = 8;                       // 截止时间全天事项
+  RemindAt RemindAt = 9;                          // 提醒时间
+  int32 RepeatType = 10;                          // 重复类型
+  int64 EndRepeatAt = 11;                         // 截止重复时间
+  string ExecuteAddr = 12;                        // 地点
+  string CreatorID = 13;                          // 创建人id
+  int32 Category = 14;                            // 事项分类 0->主事项，1->小工具，2->子事项
+  string ProjectID = 15;                          // 项目id
+  repeated TaskTaker Takers = 16;                 // 承接人数组
+  string WorkspaceID = 17;                        // 空间ID
+}
+
+message TaskTaker{
+  string DispatchID = 1;                          // 派发任务id
+  string TakerID = 2;                             // 承接人id
+  string InviteID = 3;                            // 邀请人id
+  string InviteType = 4;                          // 邀请类型
+  int32 Identity = 5;                             // 承接人身份
+  int32 State = 6;                                // 任务状态
+  int32 PersonalState = 7;                        // 个人状态
+  int32 OperateState = 8;                         // 操作状态
+  bool IsAdmin = 9;                               // 是否是责任人
+  int32 Status = 10;                              // 是否正常数据
+  int64 AcceptAt = 11;                            // 接受时间
+  int64 FinishTime = 12;                          // 完成时间
+  int64 RevokeAt = 13;                            // 撤回时间
+  int64 CancelAt = 14;                            // 取消时间
+  int64 CreateAt = 15;                            // 创建时间
+  int64 UpdateAt = 16;                            // 更新时间
+}
+
+message TaskExistsRequest{
+  string TaskID = 1;                              // 事项id
+  UserContext Context = 2;
+}
+
+message TaskExistsResponse{
+  bool Exists = 1;                                // 是否存在
+}
+
+message CreateGuideTaskRequest{
+  string TakerID = 1;                             // 承接人id
+  string NickName = 2;                            // 承接人昵称
+  UserContext Context = 3;
+}
+
+message BatchQueryTaskRequest{
+  repeated string RefTaskID = 1;                  // 任务ID，多个用逗号隔开
+  UserContext Context = 2;
+}
+
+message BatchQueryTaskResponse{
+  repeated BatchQueryTaskInfo Tasks = 1;          // 事项数据
+}
+
+message BatchQueryTaskInfo{
+  string TaskID = 1;
+  string Title = 2;
+  int32 MatterType = 3;
+  string Creator = 4;
+}
+
+message GetTaskRelevantTakersRequest{
+  string TaskID = 1;                              // 任务id
+  UserContext Context = 2;
+}
+
+message GetTaskRelevantTakersResponse{
+  repeated RelevantTaker Takers = 1;              // 事项相关方参与人
+}
+
+message RelevantTaker{
+  string TakerID = 1;                             // 参与人id
+  string NickName = 2;                            // 参与人名称
+  string Avatar = 3;                              // 参与人头像
+}
+
+message UpdateTaskRelationRequest{
+  string UpdateType = 1;                          // 更新类型
+  string Body = 2;                                // 请求体，json
+  UserContext Context = 3;
+}
+
+message GetTaskShareRequest{
+  string TaskID = 1;                              // 事项id
+  string ShareUserID = 2;                         // 分享用户id
+  UserContext Context = 3;
+}
+
+message GetTaskShareResponse{
+  string CreatorID = 1;                           // 创建人id
+  string ShareUserID = 2;                         // 分享人id
+  bool Status = 3;                                // 分享状态
+}
+
+message CreateUserInteractRequest{
+  string TaskID = 1;                              // 事项id
+  repeated string TakersID = 2;                   // 参与人id
+  bool DefIsInteract = 3;                         // 默认协作人
+  UserContext Context = 4;
+}
+
+message UpdateUserInteractRequest{
+  string TaskID = 1;                              // 事项id
+  string UserID = 2;                              // 用户id
+  UserContext Context = 3;
+}
+
+message GetPureTaskTakersRequest{
+  string TaskID = 1 ;                              //事项ID
+  string TakerID = 2;                             // 承接人id
+  UserContext Context = 3;
+}
+
+message GetPureTaskTakersResponse{
+  repeated TaskTaker Takers = 1;                  // 承接人数组
+}
+
+message CreateTaskActiveDetailRequest{
+  string TaskID = 1;                              // 事项id
+  int64 Action = 2;                               // 操作类型
+  UserContext Context = 3;
+}
+
+message UpdateProjectRelationRequest{
+  string ProjectID = 1;                           // 项目id
+  UserContext Context = 2;
+}
+
+message GetProjectMembersRequest{
+  string ProjectID = 1;                           // 项目id
+  UserContext Context = 2;
+}
+
+message GetProjectMembersResponse{
+  repeated ProjectMember Members = 1;             // 项目成员
+  string WorkspaceID = 2;                         // 空间ID
+}
+
+message ProjectMember{
+  string UserID = 1;                              // 用户id
+  string InviteID = 2;                            // 邀请人id
+  string InviteType = 3;                          // 邀请类型
+  int32 State = 4;                                // 状态
+  int64 AcceptAt = 5;                             // 接受时间
+  int64 RefuseAt = 6;                             // 拒绝时间
+  int64 CreateAt = 7;                             // 创建时间
+  int64 UpdateAt = 8;                             // 更新时间
+  bool IsExternalMember = 9;                      // 是否为外部成员
+}
+message GetProjectsNameRequest{
+  string ProjectID = 1;                           // 项目ID，多个用逗号隔开
+  UserContext Context = 2;
+}
+
+message GetProjectsNameResponse{
+  map<string, string> Data = 1;                   // map[project_id]project_name
+}
+
+message GetUsersMorningAndEveningProgramRequest{
+  string UserId = 1;
+  int32 Type = 2;
+  UserContext Context = 3;
+}
+message GetUsersMorningAndEveningProgramResponse{
+  int32 Completed = 1;
+  int32 Incomplete = 2;
+  string Id = 3;
+  repeated string Titles = 4;
+}
+
+message TaskResp {
+  string TaskID = 1;                              // 事项id
+  string Title = 2;                               // 标题
+  string Detail = 3;                              // 描述
+  int32 MatterType = 4;                           // 事项类型
+  int32 Category = 5;                            // 事项分类
+  string ParentID = 6;                           // 父级id
+  string ProjectID = 7;                          // 项目id
+  string CreatorID = 8;                          // 创建人id
+  RemindAt RemindAt = 9;                         // 提醒时间
+}
+
+message TaskConfigResp {
+  string ID = 1;
+  int32 MaxTakerTotal = 2;
+  int32 Category = 3;
+  string ParentId = 4;
+  int32 Sort = 5;
+  int32 IsCheckbox = 6;
+  string RefMeetingId = 7;
+  string ProjectId = 8;
+  string ImportProjectUserId = 9;
+  string ImportProjectAt = 10;
+  int32 Score = 11;
+  int32 LastActiveAt = 12;
+  int32 RepeatChangeId = 13;
+  string CreatorId = 14;
+}
+
+message GetTaskWithParentRequest {
+  string MatterId = 1;
+  string UserID = 2;
+  UserContext Context = 3;
+}
+
+message GetTaskWithParentResponse {
+  repeated TaskConfigResp ParentTaskConfigs = 1;
+  TaskResp TaskResp = 2;
+}
+
+message GetProjectRequest {
+  UserContext Context = 1;
+  string ProjectID = 2;
+}
+
+message GetProjectResponse {
+  string ProjectID = 1;
+  string ProjectName = 2;
+  string ProjectDesc = 3;
+  int64 TargetTime = 4;
+  string CreatorID = 5;
+  int64 CreateAt = 6;
+  bool IsArchive = 7;
+}
+
+message GetWorkspaceRequest {
+  UserContext Context = 1;
+  string WorkspaceID = 2;
+}
+
+message GetWorkspaceResponse {
+  string WorkspaceID = 1;                     // 空间id
+  string Name = 2;                            // 空间名称
+  int32 Level = 3;                            // 空间级别
+  int32 State = 4;                            // 状态
+  string CreatorID = 5;                       // 创建人
+  int64 CreateAt = 6;                         // 创建时间
+  string WsDesc = 7;                         // 空间描述
+}
+
+message GetWorkspaceMembersRequest {
+  UserContext Context = 1;
+  string WorkspaceID = 2;
+}
+
+message GetWorkspaceMembersResponse {
+  string WorkspaceID = 1;                     // 空间id
+  string Name = 2;                            // 空间名称
+  int32 Level = 3;                            // 空间级别
+  int32 State = 4;                            // 状态
+  string CreatorID = 5;                       // 创建人
+  int64 CreateAt = 6;                         // 创建时间
+  repeated WorkspaceMember Members = 7;       // 空间成员
+}
+
+message WorkspaceMember {
+  string ID = 1;                              // 成员id
+  string UserID = 2;                          // 用户id
+  string InviteID = 3;                        // 邀请人id
+  string InviteType = 4;                      // 邀请类型
+  int32 Identify = 5;                         // 身份
+  int32 State = 6;                            // 状态
+  int64 AcceptAt = 7;                         // 接受时间
+  int64 RefuseAt = 8;                         // 拒绝时间
+  int64 RevokeAt = 9;                         // 移除时间
+  int64 ExitAt = 10;                          // 退出时间
+  int64 CreateAt = 11;                        // 创建时间
+  int32 MemberType = 12;                      // 成员类型
+  int64 ApprovalAt = 13;                      // 审批时间
+  int32 ApprovalState = 14;                   // 审批状态
+}
+
+message Workspace {
+  string ID = 1;          // 分布式ID
+  string Name = 2;        // 名称
+  string CreatorID = 3;   // 空间创建人id
+  int32  WsType = 4;      // '1 空间  2 项目集',
+  int32  Level = 5;       // '1 普通 2 专业版本',
+  int64  CreateAt = 6;    // 创建时间
+  int32  State = 7;       // '1 可用 2 不可用'
+}
+
+message GetWorkspaceListRequest {
+  string UserID = 1;        // 用户id
+  int32  WsType = 2;        // 空间类型
+  UserContext Context = 3;
+}
+
+message GetWorkspaceListResponse {
+  repeated Workspace Workspaces = 1;
+}
+
+message TaskChildren {
+  string ID = 1;        // 事项ID
+  string CreatorID = 2; // 创建者ID
+  int32 MatterType = 3; // 事项类型
+}
+
+message GetTaskChildrenRequest {
+  string TaskID = 1;      // 事项ID
+  string ParentID = 2;    // 父事项ID
+  UserContext Context = 3;
+}
+
+message GetTaskChildrenResponse {
+  repeated TaskChildren TaskChildren = 1;
+}
+
+message GetWorkspaceFileSpaceRequest {
+  string WorkspaceID = 1;
+  UserContext Context = 2;
+}
+
+message GetWorkspaceFileSpaceResponse {
+  int64 TotalSpace = 1;         // 总空间
+  int64 AvailableSpace = 2;     // 可用空间
+  int64 ProcessFileSpace = 3;   //  过程文件空间
+  int64 KnowledgeBaseSpace = 4; // 知识库空间
+  int64 OtherSpace = 5;         // 其他文件空间
+}
+
+message GetWorkspaceBindProjectRequest {
+  string WorkspaceID = 1;
+  UserContext Context = 2;
+}
+
+message GetWorkspaceBindProjectResponse {
+  repeated string ProjectIDs = 1;
+}
+
+message GetWorkspaceExternalMemberRequest {
+  string WorkspaceID = 1;
+  UserContext Context = 2;
+}
+
+message GetWorkspaceExternalMemberResponse {
+  repeated string ExternalMemberIDs = 1;
+}
+
+message ExpireEquityUpdateRequest {
+  int64 ProjectLimitNum = 1;  // 项目限制数量
+  int32 ProjectState = 2;     // 项目要变更的状态
+  string UserID = 3;          // 用户ID
+  int64 WorkspaceLimitNum = 4;// 空间限制数量
+  int32 WorkspaceState = 5;   // 空间变更的状态
+  UserContext Context = 6;
+}
+
+message ExpireEquityUpdateResponse {
+  bool Result = 1;
+}
+
+message UpdateWorkspaceLevelRequest {
+  string WorkspaceID = 1;
+  int64 ExpireAt = 2;
+  int64 Level = 3;
+  UserContext Context = 4;
+}
+
+message UpdateWorkspaceLevelResponse {
+  bool Result = 1;
+}
+
+message GetTaskWorkspaceRequest {
+  string TaskID = 1;
+  UserContext Context = 2;
+}
+
+message GetTaskWorkspaceResponse {
+  string WorkspaceID = 1;
+  string CreatorID = 2;
+  int64 WsType = 3;
+  int64 Level = 4;
+  int64 ExpiredAt = 5;
+  string TaskCreatorID = 6;
+  string TaskParentCreatorID = 7;
+}
+
+message GetProjectWorkspaceRequest {
+  string ProjectID = 1;
+  UserContext Context = 2;
+}
+
+message GetProjectWorkspaceResponse {
+  string WorkspaceID = 1;
+  string CreatorID = 2;
+  int64 WsType = 3;
+  int64 Level = 4;
+  int64 ExpiredAt = 5;
+  string ProjectCreatorID = 6;
+}
+
+message AddMemberEquityUpdateRequest {
+  int64 TaskTakerNum = 1;
+  int64 WorkspaceNum = 2;
+  int64 ProjectNum = 3;
+  UserContext Context = 4;
+}
+
+message AddMemberEquityUpdateResponse {
+  bool Result = 1;
+}
+
+message BatchGetWorkspaceDirectoryRequest {
+  repeated string WorkspaceDirectoryID = 1;
+  UserContext Context = 2;
+}
+
+message BatchGetWorkspaceDirectoryResponse {
+  repeated WorkspaceDirectory WorkspaceDirectory = 1;
+}
+
+message WorkspaceDirectory {
+  string ID = 1 ;
+  string Name = 2;
+  string ParentID = 3;
+  string WorkSpaceID = 4;
+  string CreatorID = 5;
+  int64 CreateAt = 6;
+  int64 UpdateAt = 7;
+  int32 IsDefault = 8;
+}
+
+message GetWorkspaceMembersOfTaskRequest {
+  string TaskID = 1;
+  UserContext Context = 2;
+}
+
+message GetBatchWorkspaceInfoRequest {
+  string WorkspaceID = 1;
+  UserContext Context = 2;
+}
+
+message GetBatchWorkspaceInfoResponse {
+  repeated Workspace Workspace = 1;
+}
+
+message GetWorkspaceMembersOfTaskResponse {
+  repeated  string Members = 1;
+}
+
+message CreateNewInviteRequest {
+  string RefID = 1;
+  string RefType = 2;
+  map<string, string> ContentMap = 3;
+  UserContext Context = 4;
+}
+
+message GetObjectiveMemberRequest {
+  string ObjectiveID = 1;
+  UserContext Context = 2;
+}
+
+message GetObjectiveMemberResponse{
+  repeated ObjectiveMember Member = 1;
+}
+
+message ObjectiveMember {
+  string ObjectiveID = 1;
+  string CreatorID = 2;
+  string UserID = 3;                          // 用户id
+  string InviteID = 4;                        // 邀请人id
+  int32 State = 5;                            // 状态
+}
+
+message GetObjectiveRequest {
+  string ObjectiveID = 1;
+  UserContext Context = 2;
+}
+
+message GetObjectiveResponse {
+  string ObjectiveID = 1;
+  string Title = 2;
+  string Detail = 3;
+  int32 Level = 4;
+  int32 State = 5;
+  int32 OriginType = 6;
+  string OriginID = 7;
+  string CreatorID = 8;
+  int32 Schedule = 9;
+  string AffectedUid = 10;
+  int64 CompleteAt = 11;
+}
+
+message GetScreenRequest {
+  string ScreenID = 1;
+  UserContext Context = 2;
+}
+
+message GetScreenResponse {
+  string ScreenID = 1;
+  string Name = 2;
+  int32 LocationType = 3;
+  string WorkspaceID = 4;
+  string ProjectID = 5;
+  int32 Type = 6;
+  int32 State = 7;
+  string CreatorID = 8;
+}
+
+message GetScreenMembersRequest{
+  string ScreenID = 1;
+  UserContext Context = 2;
+}
+
+message GetScreenMembersResponse {
+  repeated string Members  = 1;
+}
+
+
+message GetScreensByCardTypeRequest {
+  int32 CardType = 1;
+  string RefID = 2;
+  UserContext Context = 3;
+}
+message GetScreensByCardTypeResponse {
+  repeated GetScreenResponse Data = 1;
+}
+
+service Task{
+  rpc GetTask(GetTaskRequest) returns(Response);                                                            // 查询事项信息
+  rpc GetTasksName(GetTasksNameRequest) returns(Response);                                                  // 查询任务名称
+  rpc GetTaskDispatch(GetTaskDispatchRequest) returns(Response);                                            // 查询派发任务详情
+  rpc GetTaskTakers(GetTaskTakersRequest) returns(Response);                                                // 查询任务承接人
+  rpc GetPureTaskTakers(GetPureTaskTakersRequest) returns(Response);                                        // 查询任务承接人，仅返回承接人信息
+  rpc TaskExists(TaskExistsRequest) returns(Response);                                                      // 判断事项是否存在
+  rpc CreateGuideTask(CreateGuideTaskRequest) returns(Response);                                            // 创建引导事项
+  rpc BatchQueryTask(BatchQueryTaskRequest) returns(Response);                                              // 批量查询事项
+  rpc GetTaskRelevantTakers(GetTaskRelevantTakersRequest) returns(Response);                                // 查询任务相关方参与人，包含父子事项
+  rpc UpdateTaskRelation(UpdateTaskRelationRequest) returns(Response);                                      // 更新事项关联数据
+  rpc GetTaskShare(GetTaskShareRequest) returns(Response);                                                  // 查询任务是否分享
+  rpc CreateUserInteract(CreateUserInteractRequest) returns(Response);                                      // 创建事项协作人
+  rpc UpdateUserInteract(UpdateUserInteractRequest) returns(Response);                                      // 更新事项协作人
+  rpc CreateTaskActiveDetail(CreateTaskActiveDetailRequest) returns(Response);                              // 创建事项活跃度明细
+  rpc UpdateProjectRelation(UpdateProjectRelationRequest) returns(Response);                                // 更新项目关联数据
+  rpc GetProjectMembers(GetProjectMembersRequest) returns(Response);                                        // 更新项目关联数据
+  rpc GetProjectsName(GetProjectsNameRequest) returns(Response);                                            // 查询任务名称
+  rpc GetUsersMorningAndEveningProgram(GetUsersMorningAndEveningProgramRequest) returns (Response) ;        // 获取用户早计划晚总结数据
+  rpc GetTaskWithParent(GetTaskWithParentRequest) returns (Response);                                       // 根据事项ID获取详情和父事项
+  rpc GetProject(GetProjectRequest) returns (Response);                                                     // 查询项目
+  rpc GetWorkspace(GetWorkspaceRequest) returns (Response);                                                 // 查询空间信息
+  rpc GetWorkspaceMembers(GetWorkspaceMembersRequest) returns (Response);                                   // 查询空间成员
+  rpc GetWorkspaceList(GetWorkspaceListRequest) returns (Response);                                         // 查询用户空间列表
+  rpc GetTaskChildren(GetTaskChildrenRequest) returns (Response);                                           // 查询事项的子事项
+  rpc GetWorkspaceFileSpace(GetWorkspaceFileSpaceRequest) returns (Response);                               // 获取空间文件容量
+  rpc GetWorkspaceBindProject(GetWorkspaceBindProjectRequest) returns (Response);                           // 查询空间绑定的项目
+  rpc GetWorkspaceExternalMember(GetWorkspaceExternalMemberRequest) returns (Response);                     // 查询空间外部协作人
+  rpc ExpireEquityUpdate(ExpireEquityUpdateRequest) returns (Response);                                     // 过期权益处理
+  rpc UpdateWorkspaceLevel(UpdateWorkspaceLevelRequest) returns (Response);                                 // 更新空间等级
+  rpc GetTaskWorkspace(GetTaskWorkspaceRequest) returns (Response);                                         // 查询事项所属的空间
+  rpc GetProjectWorkspace(GetProjectWorkspaceRequest) returns (Response);                                   // 查询项目所属空间
+  rpc AddMemberEquityUpdate(AddMemberEquityUpdateRequest) returns (Response);                               // 开通会员的权益更新
+  rpc BatchGetWorkspaceDirectory(BatchGetWorkspaceDirectoryRequest) returns (Response);                     // 批量查询空间目录
+  rpc GetWorkspaceMembersOfTask(GetWorkspaceMembersOfTaskRequest) returns (Response);                       // 更加事项ID查空间内部成员
+  rpc GetBatchWorkspaceInfo(GetBatchWorkspaceInfoRequest) returns (Response);                               // 更加事项ID查空间内部成员
+  rpc CreateNewInvite(CreateNewInviteRequest) returns (Response);                                           // 创建新邀请消息
+  rpc GetObjectiveMember(GetObjectiveMemberRequest) returns (Response);                                     // 查询目标成员
+  rpc GetObjective(GetObjectiveRequest) returns (Response);                                                 // 查询目标
+  rpc GetScreen(GetScreenRequest) returns (Response);                                                       // 查询视图
+  rpc GetScreenMembers(GetScreenMembersRequest) returns (Response);                                         // 查询视图成员信息
+  rpc GetScreensByCardType(GetScreensByCardTypeRequest) returns (Response);                                 // 通过 cardType 类型查询包含该类型的视图信息
+}

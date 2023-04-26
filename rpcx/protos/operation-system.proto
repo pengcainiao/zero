@@ -1,0 +1,21 @@
+syntax ="proto3";
+package pb ;
+option go_package=".;pb";
+
+import "protos/grpc_base.proto";
+
+message SendOperationRequest{
+    string UserName = 1;                // 用户信息
+    UserContext Context =2;
+}
+
+message SendOperationResponse{
+   bool Success = 1; // 是否成功
+}
+
+
+
+
+service OperationSystem{
+    rpc SendOperationForLoginUser(SendOperationRequest) returns(Response);                              // 为登录用户发送运营通知信息
+}

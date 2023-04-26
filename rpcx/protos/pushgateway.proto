@@ -1,0 +1,25 @@
+syntax ="proto3";
+package pb ;
+option go_package=".;pb";
+
+import "protos/grpc_base.proto";
+
+message WebsocketOnlineRequest{
+  repeated string Users =1 ;
+  UserContext Context = 2;
+}
+
+message WebsocketOnlineResponse{
+repeated Online Details =1;
+}
+
+message Online{
+  string UserID =1 ;
+  string Platform =2 ;
+  string ClientVersion=3 ;
+}
+
+service PushGateway{
+  // WebsocketOnline 查询指定用户websocket是否在线
+  rpc WebsocketOnline(WebsocketOnlineRequest) returns(Response) ;
+}

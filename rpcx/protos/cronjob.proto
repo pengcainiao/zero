@@ -1,0 +1,35 @@
+syntax ="proto3";
+package pb ;
+option go_package=".;pb";
+
+import "protos/grpc_base.proto";
+
+message CreateCronJobRequest {
+    string Schedule =1 ;
+    int32 Code =2 ;
+    string RefTaskID =3 ;
+    map<string,string> ExecuteMetadata =4 ;
+    UserContext Context =5;
+}
+
+message CreateCronJobResponse {
+    string JobID =1;
+}
+
+message DeleteCronJobRequest {
+    string FlyeleID =1 ; //事项或记录ID
+    int32 Code =2 ;//消息编码
+    UserContext Context =3;
+}
+
+message GetCronJobRequest {
+    string FlyeleID =1 ; //事项或记录ID
+    int32 Code =2 ;//消息编码
+    UserContext Context =3;
+}
+
+service CronJob {
+    rpc CreateCronJob(CreateCronJobRequest)returns (Response);
+    rpc DeleteCronJob(DeleteCronJobRequest)returns (Response) ;
+    rpc GetCronJob(GetCronJobRequest)returns (Response) ;
+}
