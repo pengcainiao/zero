@@ -6,7 +6,6 @@ import (
 
 	"github.com/pengcainiao/zero/core/breaker"
 	"github.com/pengcainiao/zero/core/logx"
-	"gitlab.flyele.vip/server-side/sqlx"
 )
 
 // ErrNotFound is an alias of sql.ErrNoRows

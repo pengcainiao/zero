@@ -3,10 +3,10 @@ package sqlx
 import (
 	"database/sql"
 	"fmt"
+	"github.com/jmoiron/sqlx"
 	"strings"
 	"time"
 
-	"gitlab.flyele.vip/server-side/sqlx"
 
 	"github.com/pengcainiao/zero/core/executors"
 	"github.com/pengcainiao/zero/core/logx"
