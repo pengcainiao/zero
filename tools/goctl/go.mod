@@ -2,8 +2,6 @@ module github.com/zeromicro/go-zero/tools/goctl
 
 go 1.15
 
-replace github.com/pengcainiao v2.0.71 => ../../../go-zero
-
 require (
 	github.com/fatih/structtag v1.2.0
 	github.com/go-sql-driver/mysql v1.6.0
