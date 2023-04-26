@@ -5,9 +5,6 @@ import (
 	"errors"
 	"strconv"
 	"time"
-
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/hash"
-	"gitlab.flyele.vip/server-side/go-zero/v2/core/stores/redis"
 )
 
 const (
