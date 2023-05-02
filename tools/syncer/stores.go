@@ -16,7 +16,7 @@ import (
 	coresqlx "github.com/pengcainiao/zero/core/stores/sqlx"
 	_ "github.com/pengcainiao/zero/core/sysx"
 	"github.com/pengcainiao/zero/rest/httpx"
-	"gitlab.flyele.vip/server-side/sqlx"
+	"github.com/pengcainiao/sqlx"
 )
 
 type HoldingType string

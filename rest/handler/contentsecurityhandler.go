@@ -3,11 +3,11 @@ package handler
 import (
 	"net/http"
 	"time"
+	"zero/rest/internal/security"
 
 	"github.com/pengcainiao/zero/core/codec"
 	"github.com/pengcainiao/zero/core/logx"
 	"github.com/pengcainiao/zero/rest/httpx"
-	"github.com/pengcainiao/zero/rest/internal/security"
 )
 
 const contentSecurity = "X-Content-Security"

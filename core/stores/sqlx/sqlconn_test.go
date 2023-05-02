@@ -7,7 +7,7 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/pengcainiao/zero/core/logx"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/sqlx"
+	"github.com/pengcainiao/sqlx"
 )
 
 const mockedDatasource = "sqlmock"

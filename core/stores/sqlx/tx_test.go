@@ -6,8 +6,8 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/pengcainiao/sqlx"
 	"github.com/stretchr/testify/assert"
-	"gitlab.flyele.vip/server-side/sqlx"
 )
 
 const (

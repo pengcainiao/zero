@@ -3,12 +3,12 @@ package handler
 import (
 	"net/http"
 	"sync"
+	"zero/rest/internal/response"
 
 	"github.com/pengcainiao/zero/core/load"
 	"github.com/pengcainiao/zero/core/logx"
 	"github.com/pengcainiao/zero/core/stat"
 	"github.com/pengcainiao/zero/rest/httpx"
-	"github.com/pengcainiao/zero/rest/internal/response"
 )
 
 const serviceType = "api"

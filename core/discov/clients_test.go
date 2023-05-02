@@ -3,8 +3,8 @@ package discov
 import (
 	"sync"
 	"testing"
+	"zero/core/discov/internal"
 
-	"github.com/pengcainiao/zero/core/discov/internal"
 	"github.com/stretchr/testify/assert"
 )
 

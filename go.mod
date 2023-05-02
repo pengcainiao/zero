@@ -25,6 +25,7 @@ require (
 	github.com/json-iterator/go v1.1.12
 	github.com/justinas/alice v1.2.0
 	github.com/olekukonko/tablewriter v0.0.5
+	github.com/pengcainiao/sqlx v1.1.0
 	github.com/pengcainiao/zero v1.1.4
 	github.com/prometheus/client_golang v1.15.0
 	github.com/rs/zerolog v1.29.1
@@ -34,7 +35,6 @@ require (
 	github.com/stretchr/testify v1.8.2
 	github.com/tidwall/gjson v1.14.4
 	github.com/youzan/go-nsq v1.7.11-HA
-	gitlab.flyele.vip/server-side/sqlx v1.4.32
 	go.etcd.io/etcd/api/v3 v3.5.8
 	go.etcd.io/etcd/client/v3 v3.5.8
 	go.opentelemetry.io/otel v1.15.0
@@ -100,6 +100,7 @@ require (
 	github.com/ugorji/go/codec v1.2.9 // indirect
 	github.com/xwb1989/sqlparser v0.0.0-20180606152119-120387863bf2 // indirect
 	github.com/yuin/gopher-lua v1.1.0 // indirect
+	gitlab.flyele.vip/server-side/sqlx v1.4.32 // indirect
 	go.etcd.io/etcd/client/pkg/v3 v3.5.8 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect

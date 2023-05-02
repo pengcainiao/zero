@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"gitlab.flyele.vip/server-side/sqlx"
+	"github.com/pengcainiao/sqlx"
 )
 
 type mockedConn struct {

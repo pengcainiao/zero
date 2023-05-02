@@ -13,6 +13,7 @@ import (
 	"net/http/httputil"
 	"strings"
 	"time"
+	"zero/rest/internal"
 
 	"github.com/pengcainiao/zero/core/iox"
 	"github.com/pengcainiao/zero/core/logx"
@@ -20,7 +21,6 @@ import (
 	"github.com/pengcainiao/zero/core/timex"
 	"github.com/pengcainiao/zero/core/utils"
 	"github.com/pengcainiao/zero/rest/httpx"
-	"github.com/pengcainiao/zero/rest/internal"
 )
 
 const (

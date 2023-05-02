@@ -5,10 +5,10 @@ import (
 	"database/sql"
 	"strings"
 
+	"github.com/pengcainiao/sqlx"
 	"github.com/pengcainiao/zero/core/env"
 	"github.com/pengcainiao/zero/core/logx"
 	"github.com/pengcainiao/zero/core/timex"
-	"gitlab.flyele.vip/server-side/sqlx"
 )
 
 type SqlxDB struct {

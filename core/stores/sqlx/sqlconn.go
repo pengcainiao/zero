@@ -3,6 +3,7 @@ package sqlx
 import (
 	"context"
 	"database/sql"
+	"github.com/pengcainiao/sqlx"
 
 	"github.com/pengcainiao/zero/core/breaker"
 	"github.com/pengcainiao/zero/core/logx"

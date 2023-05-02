@@ -12,9 +12,9 @@ import (
 	"strings"
 	"sync"
 	"time"
+	"zero/rest/internal"
 
 	"github.com/pengcainiao/zero/rest/httpx"
-	"github.com/pengcainiao/zero/rest/internal"
 )
 
 const (

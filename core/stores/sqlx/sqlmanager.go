@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.flyele.vip/server-side/sqlx"
+	"github.com/pengcainiao/sqlx"
 
 	"github.com/pengcainiao/zero/core/syncx"
 )

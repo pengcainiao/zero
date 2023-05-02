@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"net/http"
 	"time"
+	"zero/rest/internal"
+	"zero/rest/internal/response"
 
 	"github.com/justinas/alice"
 	"github.com/pengcainiao/zero/core/codec"
@@ -13,8 +15,7 @@ import (
 	"github.com/pengcainiao/zero/core/stat"
 	"github.com/pengcainiao/zero/rest/handler"
 	"github.com/pengcainiao/zero/rest/httpx"
-	"github.com/pengcainiao/zero/rest/internal"
-	"github.com/pengcainiao/zero/rest/internal/response"
+
 )
 
 // use 1000m to represent 100%

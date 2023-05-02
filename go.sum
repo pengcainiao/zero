@@ -867,6 +867,8 @@ github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FI
 github.com/pascaldekloe/goe v0.1.0/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/pelletier/go-toml/v2 v2.0.6 h1:nrzqCb7j9cDFj2coyLNLaZuJTLjWjlaz6nvTvIwycIU=
 github.com/pelletier/go-toml/v2 v2.0.6/go.mod h1:eumQOmlWiOPt5WriQQqoM5y18pDHwha2N+QD+EUNTek=
+github.com/pengcainiao/sqlx v1.1.0 h1:DuZpwPeKE53+fCBqOEhDjNQd1IwnlzkbaY1lbo14Yho=
+github.com/pengcainiao/sqlx v1.1.0/go.mod h1:QibLxgEVzpfXrFL5AV6flgyrHkEdchXQzgEcE63b1FA=
 github.com/pengcainiao/zero v1.1.4 h1:m8OWGD8IWq+E65oj7hvUn7hBTWDwQqxTWsX7zYksTgY=
 github.com/pengcainiao/zero v1.1.4/go.mod h1:RLEmc/P9IMgZzoCMR7gSMXH7VDRr5ycH5xyekq3Fnew=
 github.com/performancecopilot/speed/v4 v4.0.0/go.mod h1:qxrSyuDGrTOWfV+uKRFhfxw6h/4HXRGUiZiufxo49BM=

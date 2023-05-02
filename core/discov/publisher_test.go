@@ -5,9 +5,9 @@ import (
 	"sync"
 	"testing"
 	"time"
+	"zero/core/discov/internal"
 
 	"github.com/golang/mock/gomock"
-	"github.com/pengcainiao/zero/core/discov/internal"
 	"github.com/pengcainiao/zero/core/lang"
 	"github.com/pengcainiao/zero/core/logx"
 	"github.com/pengcainiao/zero/core/stringx"

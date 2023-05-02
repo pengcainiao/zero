@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"gitlab.flyele.vip/server-side/sqlx"
+	"github.com/pengcainiao/sqlx"
 )
 
 type (
