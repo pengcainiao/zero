@@ -1,8 +1,8 @@
 package discov
 
 import (
+	"github.com/pengcainiao/zero/core/discov/internal"
 	"testing"
-	"zero/core/discov/internal"
 
 	"github.com/pengcainiao/zero/core/stringx"
 	"github.com/stretchr/testify/assert"
