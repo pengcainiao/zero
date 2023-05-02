@@ -1,4 +1,4 @@
-module zero
+module github.com/pengcainiao/zero
 
 go 1.17
 
@@ -26,7 +26,7 @@ require (
 	github.com/justinas/alice v1.2.0
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/pengcainiao/sqlx v1.1.0
-	github.com/pengcainiao/zero v1.1.4
+	github.com/pengcainiao/zero v1.1.5
 	github.com/prometheus/client_golang v1.15.0
 	github.com/rs/zerolog v1.29.1
 	github.com/sensorsdata/sa-sdk-go v2.1.2+incompatible
@@ -100,7 +100,6 @@ require (
 	github.com/ugorji/go/codec v1.2.9 // indirect
 	github.com/xwb1989/sqlparser v0.0.0-20180606152119-120387863bf2 // indirect
 	github.com/yuin/gopher-lua v1.1.0 // indirect
-	gitlab.flyele.vip/server-side/sqlx v1.4.32 // indirect
 	go.etcd.io/etcd/client/pkg/v3 v3.5.8 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect

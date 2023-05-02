@@ -3,7 +3,7 @@ package discov
 import (
 	"fmt"
 	"strings"
-
+	"zero/core/discov/internal"
 )
 
 const (
