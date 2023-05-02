@@ -26,7 +26,6 @@ require (
 	github.com/justinas/alice v1.2.0
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/pengcainiao/sqlx v1.1.0
-	github.com/pengcainiao/zero v1.1.5
 	github.com/prometheus/client_golang v1.15.0
 	github.com/rs/zerolog v1.29.1
 	github.com/sensorsdata/sa-sdk-go v2.1.2+incompatible

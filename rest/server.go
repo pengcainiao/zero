@@ -5,12 +5,12 @@ import (
 	"github.com/pengcainiao/zero/core/logx"
 	"github.com/pengcainiao/zero/rest/handler"
 	"github.com/pengcainiao/zero/rest/httpx"
+	"github.com/pengcainiao/zero/rest/internal/cors"
 	"github.com/pengcainiao/zero/rest/router"
 	"log"
 	"net/http"
 	"path"
 	"time"
-	"zero/rest/internal/cors"
 )
 
 type (

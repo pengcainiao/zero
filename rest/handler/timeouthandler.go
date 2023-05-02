@@ -5,6 +5,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/pengcainiao/zero/rest/internal"
 	"io"
 	"net/http"
 	"path"
@@ -12,7 +13,7 @@ import (
 	"strings"
 	"sync"
 	"time"
-	"zero/rest/internal"
+
 
 	"github.com/pengcainiao/zero/rest/httpx"
 )

@@ -1,9 +1,9 @@
 package discov
 
 import (
+	"github.com/pengcainiao/zero/core/discov/internal"
 	"sync"
 	"sync/atomic"
-	"zero/core/discov/internal"
 
 	"github.com/pengcainiao/zero/core/logx"
 	"github.com/pengcainiao/zero/core/syncx"

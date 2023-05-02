@@ -6,6 +6,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/pengcainiao/zero/rest/internal"
 	"io"
 	"io/ioutil"
 	"net"
@@ -13,7 +14,6 @@ import (
 	"net/http/httputil"
 	"strings"
 	"time"
-	"zero/rest/internal"
 
 	"github.com/pengcainiao/zero/core/iox"
 	"github.com/pengcainiao/zero/core/logx"

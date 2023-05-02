@@ -1,13 +1,13 @@
 package handler
 
 import (
+	"github.com/pengcainiao/zero/rest/internal"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 	"time"
-	"zero/rest/internal"
 
 	"github.com/stretchr/testify/assert"
 )

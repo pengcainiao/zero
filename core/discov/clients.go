@@ -2,8 +2,8 @@ package discov
 
 import (
 	"fmt"
+	"github.com/pengcainiao/zero/core/discov/internal"
 	"strings"
-	"zero/core/discov/internal"
 )
 
 const (

@@ -1,8 +1,8 @@
 package handler
 
 import (
+	"github.com/pengcainiao/zero/rest/internal"
 	"net/http"
-	"zero/rest/internal"
 
 	"github.com/pengcainiao/zero/core/logx"
 	"github.com/pengcainiao/zero/core/syncx"
