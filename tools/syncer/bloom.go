@@ -1,42 +1,42 @@
 package syncer
-//
-//import (
-//	"context"
-//	"github.com/zeromicro/go-zero/core/bloom"
-//	"os"
-//
-//	"github.com/pengcainiao/zero/rest/httprouter"
-//)
-//
-//var (
-//	filterMap = make(map[HoldingType]*bloom.Filter)
-//)
-//
-////BloomClient 布隆过滤器
-//func BloomClient(holdingType HoldingType) *bloom.Filter {
-//	var bitSize uint = 1024 * 1024 * 8 * 2 //默认2M
-//	switch holdingType {
-//	case HoldingTasks:
-//		bitSize = 1024 * 1024 * 8 * 5 //5M
-//	case HoldingTaskDispatches:
-//		bitSize = 1024 * 1024 * 8 * 14 //14M
-//	}
-//	// 单个键的大小为1M
-//	return bloom.New(Redis(), string(holdingType), bitSize)
-//}
-//
-//func filterExists(filter *bloom.Filter, businessID string) httprouter.Response {
-//	if os.Getenv("BLOOM_FILTER") == "" {
-//		if b, err := filter.Exists(businessID); err != nil || !b {
-//			return httprouter.GetError(httprouter.ErrNotFoundCode, err)
-//		}
-//	}
-//	return httprouter.Success()
-//}
-//
-//func IsInitialed(holdingType HoldingType) bool {
-//	return Redis().Exists(context.Background(), string(holdingType)).Val() == 1
-//}
+
+import (
+	"context"
+	"github.com/pengcainiao/zero/core/bloom"
+	"os"
+
+	"github.com/pengcainiao/zero/rest/httprouter"
+)
+
+var (
+	filterMap = make(map[HoldingType]*bloom.Filter)
+)
+
+//BloomClient 布隆过滤器
+func BloomClient(holdingType HoldingType) *bloom.Filter {
+	var bitSize uint = 1024 * 1024 * 8 * 2 //默认2M
+	//switch holdingType {
+	//case HoldingTasks:
+	//	bitSize = 1024 * 1024 * 8 * 5 //5M
+	//case HoldingTaskDispatches:
+	//	bitSize = 1024 * 1024 * 8 * 14 //14M
+	//}
+	// 单个键的大小为1M
+	return bloom.New(Redis(), string(holdingType), bitSize)
+}
+
+func filterExists(filter *bloom.Filter, businessID string) httprouter.Response {
+	if os.Getenv("BLOOM_FILTER") == "" {
+		if b, err := filter.Exists(businessID); err != nil || !b {
+			return httprouter.GetError(httprouter.ErrNotFoundCode, err)
+		}
+	}
+	return httprouter.Success()
+}
+
+func IsInitialed(holdingType HoldingType) bool {
+	return Redis().Exists(context.Background(), string(holdingType)).Val() == 1
+}
 //
 //// TaskExists 判断事项是否存在
 //func TaskExists(businessID string) httprouter.Response {
@@ -55,15 +55,15 @@ package syncer
 //	}
 //	return filterExists(filter, businessID)
 //}
-//
-//// UserExists 判断用户是否存在
-//func UserExists(businessID string) httprouter.Response {
-//	filter, ok := filterMap[HoldingUsers]
-//	if !ok {
-//		filter = BloomClient(HoldingUsers)
-//	}
-//	return filterExists(filter, businessID)
-//}
+
+// UserExists 判断用户是否存在
+func UserExists(businessID string) httprouter.Response {
+	filter, ok := filterMap[HoldingUsers]
+	if !ok {
+		filter = BloomClient(HoldingUsers)
+	}
+	return filterExists(filter, businessID)
+}
 //
 //// FileExists 判断文件是否存在
 //func FileExists(businessID string) httprouter.Response {

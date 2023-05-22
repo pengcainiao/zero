@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
+	"github.com/pengcainiao/sqlx"
 	"github.com/pengcainiao/zero/core/discov"
 	"github.com/pengcainiao/zero/core/env"
 	"github.com/pengcainiao/zero/core/logx"
@@ -16,15 +17,14 @@ import (
 	coresqlx "github.com/pengcainiao/zero/core/stores/sqlx"
 	_ "github.com/pengcainiao/zero/core/sysx"
 	"github.com/pengcainiao/zero/rest/httpx"
-	"github.com/pengcainiao/sqlx"
 )
 
 type HoldingType string
 
 const (
 	HoldingUsers                HoldingType = "bloom:user"      //HoldingUsers 存储用户ID
-	HoldingTasks                HoldingType = "bloom:task"      //HoldingTasks 存储事项或会议ID
-	HoldingTaskDispatches       HoldingType = "bloom:task:disp" //HoldingTaskDispatches 存储分发ID
+	//HoldingTasks                HoldingType = "bloom:task"      //HoldingTasks 存储事项或会议ID
+	//HoldingTaskDispatches       HoldingType = "bloom:task:disp" //HoldingTaskDispatches 存储分发ID
 	HoldingRecords              HoldingType = "bloom:record"    //HoldingRecords 存储记录ID
 	HoldingProjects             HoldingType = "bloom:project"   //HoldingProjects 存储评论ID
 	HoldingFiles                HoldingType = "bloom:files"     //HoldingFiles 存储文件ID
